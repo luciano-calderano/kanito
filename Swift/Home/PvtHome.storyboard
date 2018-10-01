@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="dD4-pa-o1N">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Tab Bar Controller-->
+        <scene sceneID="qXm-oR-vT2">
+            <objects>
+                <tabBarController id="dD4-pa-o1N" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="qdW-Sr-1Hg">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="tintColor" red="0.94901960780000005" green="0.56862745100000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="barTintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="selectedImageTintColor" red="0.94901960780000005" green="0.56862745100000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="PDT-ls-fEF" kind="relationship" relationship="viewControllers" id="I4d-Zi-Ode"/>
+                        <segue destination="PuD-yk-yQW" kind="relationship" relationship="viewControllers" id="jo0-mP-ZL3"/>
+                        <segue destination="Z0V-al-xME" kind="relationship" relationship="viewControllers" id="hfB-xL-U5e"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mLj-zo-GQL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-678" y="-347"/>
+        </scene>
+        <!--#adoptions-->
+        <scene sceneID="ebm-on-Rr3">
+            <objects>
+                <viewController id="PDT-ls-fEF" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="5CP-uw-W7m"/>
+                        <viewControllerLayoutGuide type="bottom" id="HzY-hP-2Ya"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="vw8-A9-nFg">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="ZFU-V0-X7d">
+                                <rect key="frame" x="0.0" y="20" width="375" height="598"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.66666666669999997" green="0.66666666669999997" blue="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="ZFU-V0-X7d" firstAttribute="top" secondItem="5CP-uw-W7m" secondAttribute="bottom" id="CLU-mC-S9u"/>
+                            <constraint firstItem="HzY-hP-2Ya" firstAttribute="top" secondItem="ZFU-V0-X7d" secondAttribute="bottom" id="eOV-4I-wUb"/>
+                            <constraint firstAttribute="trailing" secondItem="ZFU-V0-X7d" secondAttribute="trailing" id="hTN-BP-qjd"/>
+                            <constraint firstItem="ZFU-V0-X7d" firstAttribute="leading" secondItem="vw8-A9-nFg" secondAttribute="leading" id="haC-wn-AGQ"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="#adoptions" id="qtF-5C-sW5"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="v6C-gf-R5n" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="126" y="-346"/>
+        </scene>
+        <!--#discover-->
+        <scene sceneID="OPp-M4-fNv">
+            <objects>
+                <viewController id="PuD-yk-yQW" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="h23-qn-DA4"/>
+                        <viewControllerLayoutGuide type="bottom" id="ZMf-iu-fzm"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Kl2-3a-ugW">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.94901960780000005" green="0.56862745100000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="#discover" id="ogB-yP-nxP"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WK7-vx-fN4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="801" y="-683"/>
+        </scene>
+        <!--#myKanito-->
+        <scene sceneID="57R-At-Xke">
+            <objects>
+                <viewController id="Z0V-al-xME" customClass="HomeMyKanitoCtrl" customModule="Kanito" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Rlv-af-jbl"/>
+                        <viewControllerLayoutGuide type="bottom" id="L7o-w2-ADL"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="4Z3-JL-0h6">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="UrX-E1-wR5">
+                                <rect key="frame" x="0.0" y="20" width="375" height="598"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="HomeMyKanitoCell" id="nr7-gq-JCQ" customClass="HomeMyKanitoCell" customModule="Kanito" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="nr7-gq-JCQ" id="MB3-On-bYQ">
+                                            <rect key="frame" x="0.0" y="0.0" width="342" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ady-IV-lCC" customClass="MYLabel" customModule="Kanito" customModuleProvider="target">
+                                                    <rect key="frame" x="324" y="12" width="18" height="18"/>
+                                                    <color key="backgroundColor" red="0.87058823529999996" green="0.20784313730000001" blue="0.29411764709999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="18" id="A95-lr-82f"/>
+                                                        <constraint firstAttribute="width" constant="18" id="Avk-Pb-uPu"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xx8-3d-3Sx" customClass="MYLabel" customModule="Kanito" customModuleProvider="target">
+                                                    <rect key="frame" x="41" y="11" width="281" height="22"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="22" id="QKD-5K-cCM"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="uOV-Pp-emt">
+                                                    <rect key="frame" x="4" y="6" width="32" height="32"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="32" id="8hy-Gf-WaJ"/>
+                                                        <constraint firstAttribute="height" constant="32" id="nrK-YK-zwJ"/>
+                                                    </constraints>
+                                                </imageView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="xx8-3d-3Sx" firstAttribute="leading" secondItem="uOV-Pp-emt" secondAttribute="trailing" constant="5" id="69d-6O-YJK"/>
+                                                <constraint firstItem="ady-IV-lCC" firstAttribute="centerY" secondItem="MB3-On-bYQ" secondAttribute="centerY" id="9I0-gW-3WD"/>
+                                                <constraint firstItem="ady-IV-lCC" firstAttribute="leading" secondItem="xx8-3d-3Sx" secondAttribute="trailing" constant="2" id="9pD-e9-i38"/>
+                                                <constraint firstItem="uOV-Pp-emt" firstAttribute="leading" secondItem="MB3-On-bYQ" secondAttribute="leading" constant="4" id="GNa-Ra-QtA"/>
+                                                <constraint firstItem="xx8-3d-3Sx" firstAttribute="centerY" secondItem="MB3-On-bYQ" secondAttribute="centerY" id="KjI-3s-mCy"/>
+                                                <constraint firstItem="uOV-Pp-emt" firstAttribute="centerY" secondItem="MB3-On-bYQ" secondAttribute="centerY" id="UAQ-Nn-hen"/>
+                                                <constraint firstAttribute="trailing" secondItem="ady-IV-lCC" secondAttribute="trailing" id="vF3-5h-P9r"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="badge" destination="ady-IV-lCC" id="mcp-Na-fLS"/>
+                                            <outlet property="icona" destination="uOV-Pp-emt" id="OBz-Sh-DKn"/>
+                                            <outlet property="title" destination="xx8-3d-3Sx" id="Grw-zd-j1C"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="Z0V-al-xME" id="Jlp-Un-e7T"/>
+                                    <outlet property="delegate" destination="Z0V-al-xME" id="hdL-cq-QGW"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.60000002379999995" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="UrX-E1-wR5" firstAttribute="leading" secondItem="4Z3-JL-0h6" secondAttribute="leading" id="UDo-RM-vwk"/>
+                            <constraint firstAttribute="trailing" secondItem="UrX-E1-wR5" secondAttribute="trailing" id="adb-h4-wMY"/>
+                            <constraint firstItem="UrX-E1-wR5" firstAttribute="top" secondItem="Rlv-af-jbl" secondAttribute="bottom" id="hEx-aJ-1qP"/>
+                            <constraint firstItem="L7o-w2-ADL" firstAttribute="top" secondItem="UrX-E1-wR5" secondAttribute="bottom" id="qTt-xk-5SJ"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="#myKanito" id="9ee-xz-Vdb"/>
+                    <connections>
+                        <outlet property="tableView" destination="UrX-E1-wR5" id="jvs-vk-o4S"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DDC-wY-XqP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="800.79999999999995" y="-39.130434782608695"/>
+        </scene>
+    </scenes>
+</document>

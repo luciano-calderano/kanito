@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "03C7051A63F1D9F0DFC718B2087FFFFB7AFF8052",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "03C7051A63F1D9F0DFC718B2087FFFFB7AFF8052" : 9223372036854775807,
+    "41A7E5FBACF80EB609F0288CC0836D0F32DE6048" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "2944E2CB-179D-4507-89BD-E80E829B5557",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "03C7051A63F1D9F0DFC718B2087FFFFB7AFF8052" : "Kanito.3.0\/",
+    "41A7E5FBACF80EB609F0288CC0836D0F32DE6048" : "SwiftClass\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "Kanito",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "Kanito.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/bitbucket.org\/LucianoCalderano\/kanito-swift.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "03C7051A63F1D9F0DFC718B2087FFFFB7AFF8052"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/bitbucket.org\/LucianoCalderano\/myswiftclasses.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "41A7E5FBACF80EB609F0288CC0836D0F32DE6048"
+    }
+  ]
+}

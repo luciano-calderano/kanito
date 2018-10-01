@@ -1,0 +1,25 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "e1df301a-7559-4fe2-a602-36d1c20c52bb",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+    "e1df301a-7559-4fe2-a602-36d1c20c52bb" : {
+
+    }
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "e1df301a-7559-4fe2-a602-36d1c20c52bb" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "105CD050-C36A-480F-AB4B-EC136BB72D0A",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "e1df301a-7559-4fe2-a602-36d1c20c52bb" : "ios.kanito\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "Kanito",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "Kanito\/Kanito\/Kanito.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "http:\/\/94.23.198.166\/svn\/ios.kanito.it",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Subversion",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "e1df301a-7559-4fe2-a602-36d1c20c52bb"
+    }
+  ]
+}

@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Vum-ZI-MrR">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Data Source-->
+        <scene sceneID="Hk4-Aw-D5A">
+            <objects>
+                <viewController storyboardIdentifier="Booking" id="Vum-ZI-MrR" customClass="Booking" customModule="Kanito" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jEc-r5-Ans"/>
+                        <viewControllerLayoutGuide type="bottom" id="Xtb-zg-s1z"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="f5Q-K8-uT1">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qeU-SJ-14q" customClass="HeaderContainerView" customModule="Kanito" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                                <color key="backgroundColor" red="0.050980392159999999" green="0.51764705879999995" blue="0.53725490200000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="GB4-HO-KaX"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="title" value="#bizCalendar"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="srD-le-RpJ" customClass="FSCalendar">
+                                <rect key="frame" x="0.0" y="64" width="375" height="554"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="weekdayTextColor">
+                                        <color key="value" red="0.050980392159999999" green="0.51764705879999995" blue="0.53725490200000003" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="headerTitleColor">
+                                        <color key="value" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="weekdayTextSize">
+                                        <real key="value" value="16"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="todayColor">
+                                        <color key="value" red="0.050980392159999999" green="0.51764705879999995" blue="0.53725490200000003" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <outlet property="dataSource" destination="Vum-ZI-MrR" id="aOe-zm-68m"/>
+                                    <outlet property="delegate" destination="Vum-ZI-MrR" id="LYw-8v-LtN"/>
+                                </connections>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.21176470589999999" green="0.51764705879999995" blue="0.53725490200000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Xtb-zg-s1z" firstAttribute="top" secondItem="srD-le-RpJ" secondAttribute="bottom" id="Ddy-jt-QMb"/>
+                            <constraint firstItem="qeU-SJ-14q" firstAttribute="top" secondItem="jEc-r5-Ans" secondAttribute="bottom" id="Uoc-wU-ikZ"/>
+                            <constraint firstItem="srD-le-RpJ" firstAttribute="leading" secondItem="f5Q-K8-uT1" secondAttribute="leading" id="XUV-Zj-Mmi"/>
+                            <constraint firstItem="qeU-SJ-14q" firstAttribute="leading" secondItem="f5Q-K8-uT1" secondAttribute="leading" id="gSf-b5-hvN"/>
+                            <constraint firstAttribute="trailing" secondItem="srD-le-RpJ" secondAttribute="trailing" id="o2a-tn-5X3"/>
+                            <constraint firstAttribute="trailing" secondItem="qeU-SJ-14q" secondAttribute="trailing" id="zWi-QH-mWr"/>
+                            <constraint firstItem="srD-le-RpJ" firstAttribute="top" secondItem="qeU-SJ-14q" secondAttribute="bottom" id="zv7-tv-GEf"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="#calendar" image="bar.booking.disable" selectedImage="bar.booking.enable" id="G8d-lp-mPa"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="calendar" destination="srD-le-RpJ" id="ht1-HZ-GIQ"/>
+                        <outlet property="header" destination="qeU-SJ-14q" id="TVf-29-e9E"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RE8-ED-g6O" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-10.4" y="356.67166416791605"/>
+        </scene>
+        <!--BookingWeek-->
+        <scene sceneID="YCS-Ej-qVl">
+            <objects>
+                <viewController storyboardIdentifier="BookingWeek" id="Qy6-MA-W6D" userLabel="BookingWeek" customClass="BookingWeek" customModule="Kanito" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="5CY-eU-cdI"/>
+                        <viewControllerLayoutGuide type="bottom" id="hjq-yd-Yjn"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="AYn-pU-KIO">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="z14-Xi-Rvz" customClass="HeaderContainerView" customModule="Kanito" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                                <color key="backgroundColor" red="0.050980392159999999" green="0.51764705879999995" blue="0.53725490200000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="I9s-pI-wLe"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="title" value="#booking"/>
+                                    <userDefinedRuntimeAttribute type="image" keyPath="dxImage" value="ico.white.plus"/>
+                                    <userDefinedRuntimeAttribute type="image" keyPath="sxImage" value="ico.grey.back"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aaZ-E0-IZB" customClass="FSCalendar">
+                                <rect key="frame" x="0.0" y="65" width="375" height="389"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="389" id="FnX-uy-hFA"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="weekdayTextColor">
+                                        <color key="value" red="0.050980392159999999" green="0.51764705879999995" blue="0.53725490200000003" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="headerTitleColor">
+                                        <color key="value" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="weekdayTextSize">
+                                        <real key="value" value="16"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="todayColor">
+                                        <color key="value" red="0.050980392159999999" green="0.51764705879999995" blue="0.53725490200000003" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <outlet property="dataSource" destination="Qy6-MA-W6D" id="X42-E9-oBu"/>
+                                    <outlet property="delegate" destination="Qy6-MA-W6D" id="FGv-Fb-ZlD"/>
+                                </connections>
+                            </view>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fGn-Eg-Wqa">
+                                <rect key="frame" x="0.0" y="454" width="375" height="213"/>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.21176470589999999" green="0.51764705879999995" blue="0.53725490200000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="hjq-yd-Yjn" firstAttribute="top" secondItem="fGn-Eg-Wqa" secondAttribute="bottom" id="8S5-Qe-hmb"/>
+                            <constraint firstItem="z14-Xi-Rvz" firstAttribute="leading" secondItem="AYn-pU-KIO" secondAttribute="leading" id="E9i-Wn-n2o"/>
+                            <constraint firstItem="aaZ-E0-IZB" firstAttribute="leading" secondItem="AYn-pU-KIO" secondAttribute="leading" id="Jjp-Mr-gPo"/>
+                            <constraint firstItem="z14-Xi-Rvz" firstAttribute="top" secondItem="5CY-eU-cdI" secondAttribute="bottom" id="Lcf-mn-Plr"/>
+                            <constraint firstItem="fGn-Eg-Wqa" firstAttribute="top" secondItem="aaZ-E0-IZB" secondAttribute="bottom" id="Qol-CA-XY0"/>
+                            <constraint firstAttribute="trailing" secondItem="z14-Xi-Rvz" secondAttribute="trailing" id="ZNt-ap-sjX"/>
+                            <constraint firstAttribute="trailing" secondItem="aaZ-E0-IZB" secondAttribute="trailing" id="egE-Fr-ZaP"/>
+                            <constraint firstAttribute="trailing" secondItem="fGn-Eg-Wqa" secondAttribute="trailing" id="g7J-NL-LUd"/>
+                            <constraint firstItem="fGn-Eg-Wqa" firstAttribute="leading" secondItem="AYn-pU-KIO" secondAttribute="leading" id="m7G-KS-juG"/>
+                            <constraint firstItem="aaZ-E0-IZB" firstAttribute="top" secondItem="z14-Xi-Rvz" secondAttribute="bottom" constant="1" id="w58-8u-EUd"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="calendar" destination="aaZ-E0-IZB" id="zji-oW-MHZ"/>
+                        <outlet property="calendarHeightConstraint" destination="FnX-uy-hFA" id="KhW-Vr-2pt"/>
+                        <outlet property="header" destination="z14-Xi-Rvz" id="f7H-UD-bx6"/>
+                        <outlet property="scroll" destination="fGn-Eg-Wqa" id="cOY-Ve-Zcq"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VQd-dQ-WAe" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="704.79999999999995" y="356.67166416791605"/>
+        </scene>
+        <!--Booking Edit-->
+        <scene sceneID="VcA-Dm-3wm">
+            <objects>
+                <viewController storyboardIdentifier="BookingEdit" id="DEC-kP-5OT" customClass="BookingEdit" customModule="Kanito" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="fhC-er-0Tz"/>
+                        <viewControllerLayoutGuide type="bottom" id="JIf-1e-jP7"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Yf9-bm-b1W">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ShM-eL-p13" customClass="HeaderContainerView" customModule="Kanito" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                                <color key="backgroundColor" red="0.050980392159999999" green="0.51764705879999995" blue="0.53725490200000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="Yz2-zO-dKG"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="title" value="#booking"/>
+                                    <userDefinedRuntimeAttribute type="image" keyPath="sxImage" value="ico.grey.back"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="dxTitle" value="#save"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OF9-mv-kQv">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.21176470589999999" green="0.51764705879999995" blue="0.53725490200000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="ShM-eL-p13" firstAttribute="top" secondItem="fhC-er-0Tz" secondAttribute="bottom" id="GuT-dG-DWa"/>
+                            <constraint firstItem="ShM-eL-p13" firstAttribute="leading" secondItem="Yf9-bm-b1W" secondAttribute="leading" id="HW8-yv-SvS"/>
+                            <constraint firstItem="JIf-1e-jP7" firstAttribute="top" secondItem="OF9-mv-kQv" secondAttribute="bottom" id="QXy-Jt-ht7"/>
+                            <constraint firstItem="OF9-mv-kQv" firstAttribute="top" secondItem="ShM-eL-p13" secondAttribute="bottom" id="aSn-dU-XNd"/>
+                            <constraint firstAttribute="trailing" secondItem="OF9-mv-kQv" secondAttribute="trailing" id="gqw-am-cwa"/>
+                            <constraint firstAttribute="trailing" secondItem="ShM-eL-p13" secondAttribute="trailing" id="jX6-wz-2xs"/>
+                            <constraint firstItem="OF9-mv-kQv" firstAttribute="leading" secondItem="Yf9-bm-b1W" secondAttribute="leading" id="w9O-BV-KFU"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="header" destination="ShM-eL-p13" id="WMH-4D-wgw"/>
+                        <outlet property="scroll" destination="OF9-mv-kQv" id="eW1-8e-6qP"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0fm-us-zom" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2078" y="357"/>
+        </scene>
+        <!--Booking Multiple-->
+        <scene sceneID="SAQ-WL-1ys">
+            <objects>
+                <viewController storyboardIdentifier="BookingMultiple" id="xcz-BO-Oy2" customClass="BookingMultiple" customModule="Kanito" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="wZV-Kk-6xT"/>
+                        <viewControllerLayoutGuide type="bottom" id="0hd-if-zt6"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="hiH-Nl-ICs">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="deL-sK-7x7" customClass="HeaderContainerView" customModule="Kanito" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                                <color key="backgroundColor" red="0.050980392159999999" green="0.51764705879999995" blue="0.53725490200000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="r11-zt-jZV"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="title" value="#booking"/>
+                                    <userDefinedRuntimeAttribute type="image" keyPath="sxImage" value="ico.grey.back"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="5we-l1-CSe">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="xcz-BO-Oy2" id="CEq-qb-mJp"/>
+                                    <outlet property="delegate" destination="xcz-BO-Oy2" id="eNe-Do-6Ua"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.21176470589999999" green="0.51764705879999995" blue="0.53725490200000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="5we-l1-CSe" secondAttribute="trailing" id="8db-Rm-MbY"/>
+                            <constraint firstAttribute="trailing" secondItem="deL-sK-7x7" secondAttribute="trailing" id="DdJ-Vz-hN5"/>
+                            <constraint firstItem="0hd-if-zt6" firstAttribute="top" secondItem="5we-l1-CSe" secondAttribute="bottom" id="LkU-Do-HNf"/>
+                            <constraint firstItem="5we-l1-CSe" firstAttribute="leading" secondItem="hiH-Nl-ICs" secondAttribute="leading" id="S3h-HJ-DBn"/>
+                            <constraint firstItem="deL-sK-7x7" firstAttribute="top" secondItem="wZV-Kk-6xT" secondAttribute="bottom" id="aUU-4n-oyW"/>
+                            <constraint firstItem="5we-l1-CSe" firstAttribute="top" secondItem="deL-sK-7x7" secondAttribute="bottom" id="eHk-3z-deo"/>
+                            <constraint firstItem="deL-sK-7x7" firstAttribute="leading" secondItem="hiH-Nl-ICs" secondAttribute="leading" id="kub-It-tNh"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="header" destination="deL-sK-7x7" id="dvJ-eF-Pal"/>
+                        <outlet property="tableView" destination="5we-l1-CSe" id="nlE-Do-lP3"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8c0-Di-c49" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1388" y="357"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="bar.booking.disable" width="20" height="20"/>
+        <image name="bar.booking.enable" width="20" height="20"/>
+        <image name="ico.grey.back" width="50" height="40"/>
+        <image name="ico.white.plus" width="40" height="40"/>
+    </resources>
+</document>

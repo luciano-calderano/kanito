@@ -1,0 +1,1003 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="8Ug-FT-p31">
+    <device id="retina5_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Sign Up Type-->
+        <scene sceneID="hXk-hP-wzn">
+            <objects>
+                <viewController storyboardIdentifier="SignUpType" useStoryboardIdentifierAsRestorationIdentifier="YES" id="MX6-QL-nCa" customClass="SignUpType" customModule="Kanito" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="YQD-Qk-4xw"/>
+                        <viewControllerLayoutGuide type="bottom" id="yMg-VI-vMP"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="cDx-gD-3ba">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="#signUpMessage" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jvf-NX-ijD" customClass="MYLabel" customModule="Kanito" customModuleProvider="target">
+                                <rect key="frame" x="20" y="85" width="374" height="90"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="90" id="4PQ-lt-55p"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AYK-U1-ylU">
+                                <rect key="frame" x="0.0" y="195" width="414" height="282"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="efI-23-2AC" userLabel="GoogleContainer">
+                                        <rect key="frame" x="20" y="12" width="374" height="45"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="45" id="vNN-v4-6Vr"/>
+                                        </constraints>
+                                    </view>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1el-t1-Tq9" customClass="MYButton" customModule="Kanito" customModuleProvider="target">
+                                        <rect key="frame" x="20" y="12" width="374" height="45"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="45" id="92P-32-mXC"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="5" maxX="20" maxY="5"/>
+                                        <state key="normal" title="#signUpGoogle" image="google">
+                                            <color key="titleColor" red="0.29803921570000003" green="0.31372549020000001" blue="0.36078431370000003" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="4"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" red="0.29803921568627451" green="0.31372549019607843" blue="0.36078431372549019" alpha="1" colorSpace="calibratedRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="googlePlusButtonTouchUpInsideSender:" destination="MX6-QL-nCa" eventType="touchUpInside" id="fgf-92-eeH"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OFw-Ki-pjA" customClass="MYButton" customModule="Kanito" customModuleProvider="target">
+                                        <rect key="frame" x="20" y="65" width="374" height="45"/>
+                                        <color key="backgroundColor" red="0.1137254902" green="0.31372549020000001" blue="0.61960784310000006" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="45" id="FaA-cj-7tm"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="20" maxY="0.0"/>
+                                        <state key="normal" title="#signUpFB" image="facebook">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="4"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="btnFbLogin" destination="MX6-QL-nCa" eventType="touchUpInside" id="jAR-iG-Doa"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="#signUpNoPost" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="piw-pr-7sE" customClass="MYLabel" customModule="Kanito" customModuleProvider="target">
+                                        <rect key="frame" x="20" y="114" width="374" height="20"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="20" id="Gsb-BW-xju"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                        <color key="textColor" red="0.66666666666666663" green="0.66666666666666663" blue="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7Zh-rp-Jhm" userLabel="or line">
+                                        <rect key="frame" x="20" y="174" width="374" height="1"/>
+                                        <color key="backgroundColor" red="0.66666666666666663" green="0.66666666666666663" blue="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="1" id="aUR-Bh-k8z"/>
+                                        </constraints>
+                                    </view>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="#or" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="obs-LH-yg4" customClass="MYLabel" customModule="Kanito" customModuleProvider="target">
+                                        <rect key="frame" x="170" y="165" width="62" height="18"/>
+                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="18" id="CMr-dU-bOE"/>
+                                            <constraint firstAttribute="width" constant="62" id="vAV-OH-zk4"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                        <color key="textColor" red="0.33333333333333331" green="0.33333333333333331" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="32u-uI-BvR" customClass="MYButton" customModule="Kanito" customModuleProvider="target">
+                                        <rect key="frame" x="20" y="225" width="374" height="45"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="45" id="3vZ-qD-WQP"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="16"/>
+                                        <state key="normal" title="#createAccount">
+                                            <color key="titleColor" red="0.94901960784313721" green="0.56862745098039214" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="4"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" red="0.94901960780000005" green="0.56862745100000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="btnSignUp" destination="MX6-QL-nCa" eventType="touchUpInside" id="YG2-ja-tFT"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="1el-t1-Tq9" firstAttribute="top" secondItem="piw-pr-7sE" secondAttribute="bottom" constant="-122" id="9NY-f4-vF4"/>
+                                    <constraint firstItem="efI-23-2AC" firstAttribute="leading" secondItem="AYK-U1-ylU" secondAttribute="leading" constant="20" id="9tR-bX-1s1"/>
+                                    <constraint firstItem="efI-23-2AC" firstAttribute="top" secondItem="AYK-U1-ylU" secondAttribute="top" constant="12" id="D5V-t6-NlN"/>
+                                    <constraint firstAttribute="trailing" secondItem="OFw-Ki-pjA" secondAttribute="trailing" constant="20" id="E8g-vk-3zQ"/>
+                                    <constraint firstAttribute="trailing" secondItem="7Zh-rp-Jhm" secondAttribute="trailing" constant="20" id="Hnc-zH-bLs"/>
+                                    <constraint firstAttribute="trailing" secondItem="piw-pr-7sE" secondAttribute="trailing" constant="20" id="J1d-al-jRV"/>
+                                    <constraint firstItem="7Zh-rp-Jhm" firstAttribute="top" secondItem="piw-pr-7sE" secondAttribute="bottom" constant="40" id="Ll1-ci-i3L"/>
+                                    <constraint firstAttribute="trailing" secondItem="1el-t1-Tq9" secondAttribute="trailing" constant="20" id="NGd-jF-zPo"/>
+                                    <constraint firstItem="1el-t1-Tq9" firstAttribute="top" secondItem="AYK-U1-ylU" secondAttribute="top" constant="12" id="OTj-2Q-EPH"/>
+                                    <constraint firstAttribute="height" constant="282" id="QS6-ai-4Pn"/>
+                                    <constraint firstItem="obs-LH-yg4" firstAttribute="centerY" secondItem="7Zh-rp-Jhm" secondAttribute="centerY" constant="0.16666666666651508" id="USd-wv-5cp"/>
+                                    <constraint firstItem="1el-t1-Tq9" firstAttribute="leading" secondItem="AYK-U1-ylU" secondAttribute="leading" constant="20" id="XKg-EB-6bE"/>
+                                    <constraint firstItem="obs-LH-yg4" firstAttribute="centerX" secondItem="7Zh-rp-Jhm" secondAttribute="centerX" constant="-6" id="Xwf-o8-36Q"/>
+                                    <constraint firstItem="piw-pr-7sE" firstAttribute="leading" secondItem="AYK-U1-ylU" secondAttribute="leading" constant="20" id="YtP-rs-qs0"/>
+                                    <constraint firstItem="32u-uI-BvR" firstAttribute="leading" secondItem="AYK-U1-ylU" secondAttribute="leading" constant="20" id="eOj-Yh-Ecb"/>
+                                    <constraint firstAttribute="trailing" secondItem="efI-23-2AC" secondAttribute="trailing" constant="20" id="hsc-Xd-wNZ"/>
+                                    <constraint firstAttribute="trailing" secondItem="32u-uI-BvR" secondAttribute="trailing" constant="20" id="kE2-ot-yHN"/>
+                                    <constraint firstItem="OFw-Ki-pjA" firstAttribute="top" secondItem="efI-23-2AC" secondAttribute="bottom" constant="8" id="leV-4f-8Bd"/>
+                                    <constraint firstAttribute="bottom" secondItem="32u-uI-BvR" secondAttribute="bottom" constant="12" id="mZc-yD-swf"/>
+                                    <constraint firstItem="OFw-Ki-pjA" firstAttribute="leading" secondItem="AYK-U1-ylU" secondAttribute="leading" constant="20" id="nT5-WR-NoQ"/>
+                                    <constraint firstItem="7Zh-rp-Jhm" firstAttribute="leading" secondItem="AYK-U1-ylU" secondAttribute="leading" constant="20" id="vIM-68-dRW"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="s52-lo-cyG">
+                                <rect key="frame" x="0.0" y="20" width="414" height="44"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logoOrange" translatesAutoresizingMaskIntoConstraints="NO" id="lEr-I0-Esb">
+                                        <rect key="frame" x="160" y="4" width="94" height="37"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="94" id="9c7-fT-Gwa"/>
+                                            <constraint firstAttribute="height" constant="37" id="PTz-dC-98p"/>
+                                        </constraints>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NwL-4q-ams">
+                                        <rect key="frame" x="20" y="10" width="24" height="24"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="24" id="5dv-yq-lLb"/>
+                                            <constraint firstAttribute="height" constant="24" id="JTb-mX-hiI"/>
+                                        </constraints>
+                                        <state key="normal" backgroundImage="ico.grey.back">
+                                            <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="backPressed" destination="MX6-QL-nCa" eventType="touchUpInside" id="lUx-1D-bNa"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="NwL-4q-ams" firstAttribute="centerY" secondItem="s52-lo-cyG" secondAttribute="centerY" id="UHg-Lv-Hgc"/>
+                                    <constraint firstItem="lEr-I0-Esb" firstAttribute="centerY" secondItem="s52-lo-cyG" secondAttribute="centerY" id="WqO-nB-yhI"/>
+                                    <constraint firstItem="lEr-I0-Esb" firstAttribute="centerX" secondItem="s52-lo-cyG" secondAttribute="centerX" id="gDV-qW-sAf"/>
+                                    <constraint firstAttribute="height" constant="44" id="gyF-8v-aha"/>
+                                    <constraint firstItem="NwL-4q-ams" firstAttribute="leading" secondItem="s52-lo-cyG" secondAttribute="leading" constant="20" id="zU7-Ig-EyV"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Jvf-NX-ijD" firstAttribute="leading" secondItem="cDx-gD-3ba" secondAttribute="leadingMargin" id="D7X-vx-Q8F"/>
+                            <constraint firstItem="s52-lo-cyG" firstAttribute="leading" secondItem="cDx-gD-3ba" secondAttribute="leading" id="Q0B-AG-g0T"/>
+                            <constraint firstItem="Jvf-NX-ijD" firstAttribute="trailing" secondItem="cDx-gD-3ba" secondAttribute="trailingMargin" id="Qrs-2P-ZHt"/>
+                            <constraint firstItem="Jvf-NX-ijD" firstAttribute="top" secondItem="s52-lo-cyG" secondAttribute="bottom" constant="21" id="YXb-YX-peB"/>
+                            <constraint firstAttribute="trailing" secondItem="s52-lo-cyG" secondAttribute="trailing" id="dP7-Rc-m7R"/>
+                            <constraint firstItem="AYK-U1-ylU" firstAttribute="top" secondItem="YQD-Qk-4xw" secondAttribute="bottom" constant="175" id="eAE-Jr-gqm"/>
+                            <constraint firstItem="AYK-U1-ylU" firstAttribute="leading" secondItem="cDx-gD-3ba" secondAttribute="leading" id="l9c-v0-XoR"/>
+                            <constraint firstAttribute="trailing" secondItem="AYK-U1-ylU" secondAttribute="trailing" id="pfz-f3-e98"/>
+                            <constraint firstItem="s52-lo-cyG" firstAttribute="top" secondItem="YQD-Qk-4xw" secondAttribute="bottom" id="zWu-kK-PiP"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="UCj-QE-SyG"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="fbButton" destination="OFw-Ki-pjA" id="bdL-el-X3h"/>
+                        <outlet property="googleButton" destination="1el-t1-Tq9" id="BPj-ml-sC7"/>
+                        <outlet property="googleContainer" destination="efI-23-2AC" id="IPU-sU-Mwn"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nhJ-KK-svY" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-3155.072463768116" y="-1946.7391304347827"/>
+        </scene>
+        <!--Sign Up User Type Ctrl-->
+        <scene sceneID="lBS-wD-9kp">
+            <objects>
+                <viewController storyboardIdentifier="SignUpUserTypeCtrl" id="8Ug-FT-p31" customClass="SignUpUserTypeCtrl" customModule="Kanito" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Gav-vI-uKT"/>
+                        <viewControllerLayoutGuide type="bottom" id="KWo-iN-amq"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="X7v-Z1-kie">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mtl-XA-yIQ">
+                                <rect key="frame" x="0.0" y="20" width="414" height="44"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2gU-gs-gJ0">
+                                        <rect key="frame" x="20" y="10" width="24" height="24"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="24" id="Ti7-XZ-uMT"/>
+                                            <constraint firstAttribute="width" constant="24" id="tKh-ZB-zEk"/>
+                                        </constraints>
+                                        <state key="normal" backgroundImage="ico.grey.close">
+                                            <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="backPressed" destination="MX6-QL-nCa" eventType="touchUpInside" id="Kyj-Cb-n6e"/>
+                                            <action selector="backPressed" destination="8Ug-FT-p31" eventType="touchUpInside" id="nY8-Qg-ZWT"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="2gU-gs-gJ0" firstAttribute="centerY" secondItem="mtl-XA-yIQ" secondAttribute="centerY" id="aeF-Jc-7U5"/>
+                                    <constraint firstAttribute="height" constant="44" id="jN3-0S-zk6"/>
+                                    <constraint firstItem="2gU-gs-gJ0" firstAttribute="leading" secondItem="mtl-XA-yIQ" secondAttribute="leading" constant="20" id="lf1-9u-Qde"/>
+                                </constraints>
+                            </view>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" directionalLockEnabled="YES" bounces="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="wvG-NH-3UM">
+                                <rect key="frame" x="0.0" y="130" width="414" height="551"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="o4I-Pm-CEC" customClass="SignUpUserTypeLayout" customModule="Kanito" customModuleProvider="target">
+                                    <size key="itemSize" width="250" height="290"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="SignUpUserTypeCell" id="pVn-uC-nAK" customClass="SignUpUserTypeCell" customModule="Kanito" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="130.66666666666666" width="250" height="290"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="0.0" y="0.0" width="250" height="290"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="O0T-t8-DpO">
+                                                    <rect key="frame" x="0.0" y="0.0" width="250" height="88"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Coming soon" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xmk-VW-JRO" customClass="MYLabel" customModule="Kanito" customModuleProvider="target">
+                                                            <rect key="frame" x="72" y="15" width="107" height="22"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                    <color key="backgroundColor" red="0.87058823529999996" green="0.20784313730000001" blue="0.29411764709999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="88" id="kwE-XC-xhv"/>
+                                                        <constraint firstItem="xmk-VW-JRO" firstAttribute="centerX" secondItem="O0T-t8-DpO" secondAttribute="centerX" id="uNM-TT-Djy"/>
+                                                        <constraint firstItem="xmk-VW-JRO" firstAttribute="top" secondItem="O0T-t8-DpO" secondAttribute="top" constant="15" id="vhY-la-fEh"/>
+                                                    </constraints>
+                                                </view>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="rEr-i5-fJ2">
+                                                    <rect key="frame" x="75" y="65" width="100" height="100"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="100" id="5lH-fD-ozc"/>
+                                                        <constraint firstAttribute="width" constant="100" id="hk4-p0-ofU"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="title" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AEg-yA-jSz" customClass="MYLabel" customModule="Kanito" customModuleProvider="target">
+                                                    <rect key="frame" x="110" y="185" width="31" height="22"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                                    <color key="textColor" red="0.94901960780000005" green="0.56862745100000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="descr" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lfm-wI-Dbp" customClass="MYLabel" customModule="Kanito" customModuleProvider="target">
+                                                    <rect key="frame" x="15" y="212" width="220" height="17"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <color key="textColor" red="0.94901960780000005" green="0.56862745100000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <view userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8U8-2Z-qDA" customClass="MYCheckView" customModule="Kanito" customModuleProvider="target">
+                                                    <rect key="frame" x="210" y="8" width="32" height="32"/>
+                                                    <color key="backgroundColor" red="0.94901960780000005" green="0.56862745100000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="32" id="Ldq-rV-XII"/>
+                                                        <constraint firstAttribute="height" constant="32" id="dC2-zs-koA"/>
+                                                    </constraints>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="color" keyPath="disabledColor">
+                                                            <color key="value" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                </view>
+                                            </subviews>
+                                        </view>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstItem="lfm-wI-Dbp" firstAttribute="top" secondItem="AEg-yA-jSz" secondAttribute="bottom" constant="5" id="3EI-zr-9en"/>
+                                            <constraint firstItem="8U8-2Z-qDA" firstAttribute="top" secondItem="pVn-uC-nAK" secondAttribute="topMargin" id="5Ib-2k-CQy"/>
+                                            <constraint firstItem="rEr-i5-fJ2" firstAttribute="top" secondItem="pVn-uC-nAK" secondAttribute="top" constant="65" id="6Sv-li-N0D"/>
+                                            <constraint firstAttribute="trailing" secondItem="O0T-t8-DpO" secondAttribute="trailing" id="7q5-N2-ZtN"/>
+                                            <constraint firstItem="8U8-2Z-qDA" firstAttribute="trailing" secondItem="pVn-uC-nAK" secondAttribute="trailingMargin" id="jwb-a8-KGD"/>
+                                            <constraint firstItem="AEg-yA-jSz" firstAttribute="centerX" secondItem="pVn-uC-nAK" secondAttribute="centerX" id="keQ-D7-TzW"/>
+                                            <constraint firstAttribute="trailing" secondItem="lfm-wI-Dbp" secondAttribute="trailing" constant="15" id="pZz-vv-Fml"/>
+                                            <constraint firstItem="rEr-i5-fJ2" firstAttribute="centerX" secondItem="pVn-uC-nAK" secondAttribute="centerX" id="sII-rn-rNq"/>
+                                            <constraint firstItem="O0T-t8-DpO" firstAttribute="top" secondItem="pVn-uC-nAK" secondAttribute="top" id="tQ3-5B-M59"/>
+                                            <constraint firstItem="AEg-yA-jSz" firstAttribute="top" secondItem="rEr-i5-fJ2" secondAttribute="bottom" constant="20" id="tgx-b9-NS1"/>
+                                            <constraint firstItem="O0T-t8-DpO" firstAttribute="leading" secondItem="pVn-uC-nAK" secondAttribute="leading" id="vRS-px-0CN"/>
+                                            <constraint firstItem="lfm-wI-Dbp" firstAttribute="leading" secondItem="pVn-uC-nAK" secondAttribute="leading" constant="15" id="yqp-Wp-W3X"/>
+                                            <constraint firstItem="lfm-wI-Dbp" firstAttribute="centerX" secondItem="pVn-uC-nAK" secondAttribute="centerX" id="zKt-Nr-Stt"/>
+                                        </constraints>
+                                        <connections>
+                                            <outlet property="check" destination="8U8-2Z-qDA" id="Ny4-2t-XfL"/>
+                                            <outlet property="comingSoon" destination="O0T-t8-DpO" id="b6R-Gf-TE1"/>
+                                            <outlet property="descr" destination="lfm-wI-Dbp" id="T34-pG-IWF"/>
+                                            <outlet property="image" destination="rEr-i5-fJ2" id="DC2-91-9vb"/>
+                                            <outlet property="title" destination="AEg-yA-jSz" id="CaP-gx-2sA"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="8Ug-FT-p31" id="Cxd-KA-UHw"/>
+                                    <outlet property="delegate" destination="8Ug-FT-p31" id="qkM-vp-CXq"/>
+                                </connections>
+                            </collectionView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RfG-Tz-XwA" customClass="MYButton" customModule="Kanito" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="681" width="414" height="55"/>
+                                <color key="backgroundColor" red="0.92277157310000002" green="0.49761950970000002" blue="0.1204432845" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="55" id="LcH-8A-rgw"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="16"/>
+                                <state key="normal" title="#continue">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="continueTapped" destination="8Ug-FT-p31" eventType="touchUpInside" id="wt0-oe-VOU"/>
+                                    <action selector="singUpTapped" destination="vvF-xK-e1q" eventType="touchUpInside" id="e3E-zu-E83"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="w0t-ph-Tzl">
+                                <rect key="frame" x="0.0" y="60" width="414" height="70"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="#startProfile" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l8U-0C-kWB" customClass="MYLabel" customModule="Kanito" customModuleProvider="target">
+                                        <rect key="frame" x="30" y="6" width="354" height="60"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.97647058819999999" green="0.97647058819999999" blue="0.97647058819999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="l8U-0C-kWB" secondAttribute="bottom" constant="4" id="0HL-7W-Upc"/>
+                                    <constraint firstItem="l8U-0C-kWB" firstAttribute="leading" secondItem="w0t-ph-Tzl" secondAttribute="leading" constant="30" id="3Vg-Ot-W7Z"/>
+                                    <constraint firstAttribute="height" constant="70" id="Lvc-rx-Ts5"/>
+                                    <constraint firstAttribute="trailing" secondItem="l8U-0C-kWB" secondAttribute="trailing" constant="30" id="hSf-5p-akG"/>
+                                    <constraint firstItem="l8U-0C-kWB" firstAttribute="top" secondItem="w0t-ph-Tzl" secondAttribute="top" constant="6" id="lzx-pE-qkd"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="wvG-NH-3UM" firstAttribute="leading" secondItem="X7v-Z1-kie" secondAttribute="leading" id="5tK-AA-GmN"/>
+                            <constraint firstItem="RfG-Tz-XwA" firstAttribute="leading" secondItem="X7v-Z1-kie" secondAttribute="leading" id="CyW-b6-9Mj"/>
+                            <constraint firstItem="KWo-iN-amq" firstAttribute="top" secondItem="RfG-Tz-XwA" secondAttribute="bottom" id="QvH-KT-WLB"/>
+                            <constraint firstAttribute="trailing" secondItem="mtl-XA-yIQ" secondAttribute="trailing" id="T3N-6w-cVD"/>
+                            <constraint firstItem="w0t-ph-Tzl" firstAttribute="top" secondItem="mtl-XA-yIQ" secondAttribute="bottom" constant="-4" id="Txg-EJ-WbH"/>
+                            <constraint firstAttribute="trailing" secondItem="wvG-NH-3UM" secondAttribute="trailing" id="VDh-bc-AuI"/>
+                            <constraint firstAttribute="trailing" secondItem="w0t-ph-Tzl" secondAttribute="trailing" id="Way-fk-PXr"/>
+                            <constraint firstItem="mtl-XA-yIQ" firstAttribute="leading" secondItem="X7v-Z1-kie" secondAttribute="leading" id="gt2-NQ-hx0"/>
+                            <constraint firstItem="mtl-XA-yIQ" firstAttribute="top" secondItem="Gav-vI-uKT" secondAttribute="bottom" id="hZc-bm-bh4"/>
+                            <constraint firstItem="wvG-NH-3UM" firstAttribute="top" secondItem="w0t-ph-Tzl" secondAttribute="bottom" id="iHa-wh-Qjg"/>
+                            <constraint firstAttribute="trailing" secondItem="RfG-Tz-XwA" secondAttribute="trailing" id="jBw-0T-Ejy"/>
+                            <constraint firstItem="RfG-Tz-XwA" firstAttribute="top" secondItem="wvG-NH-3UM" secondAttribute="bottom" id="kAv-RJ-CSy"/>
+                            <constraint firstItem="w0t-ph-Tzl" firstAttribute="leading" secondItem="X7v-Z1-kie" secondAttribute="leading" id="x2X-WZ-mo2"/>
+                        </constraints>
+                    </view>
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
+                    <connections>
+                        <outlet property="collectionView" destination="wvG-NH-3UM" id="7Ex-O3-Seh"/>
+                        <outlet property="titleView" destination="w0t-ph-Tzl" id="D8S-Uz-9KM"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ISe-Re-Gjl" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-3937.5" y="-1948.75"/>
+        </scene>
+        <!--Sign Up Data-->
+        <scene sceneID="4dN-PQ-Pgy">
+            <objects>
+                <viewController storyboardIdentifier="SignUpData" useStoryboardIdentifierAsRestorationIdentifier="YES" id="vvF-xK-e1q" customClass="SignUpData" customModule="Kanito" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="C4M-Kf-WSX"/>
+                        <viewControllerLayoutGuide type="bottom" id="NdR-AI-Xqs"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="iN1-fc-F8u">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gNN-kG-mTl" customClass="MYButton" customModule="Kanito" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="681" width="414" height="55"/>
+                                <color key="backgroundColor" red="0.92277157310000002" green="0.49761950970000002" blue="0.1204432845" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="55" id="sYY-cO-72q"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="16"/>
+                                <state key="normal" title="#createAccount">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="singUpTapped" destination="vvF-xK-e1q" eventType="touchUpInside" id="ogA-nM-mbc"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mnq-iP-sK9">
+                                <rect key="frame" x="0.0" y="20" width="414" height="44"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logoOrange" translatesAutoresizingMaskIntoConstraints="NO" id="Do2-d9-3PZ">
+                                        <rect key="frame" x="160" y="4" width="94" height="37"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="37" id="8K1-zJ-XDV"/>
+                                            <constraint firstAttribute="width" constant="94" id="RCs-xq-JLV"/>
+                                        </constraints>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qEn-Tp-UNJ">
+                                        <rect key="frame" x="20" y="10" width="24" height="24"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="24" id="aZB-qT-xbd"/>
+                                            <constraint firstAttribute="height" constant="24" id="cbM-jd-kED"/>
+                                        </constraints>
+                                        <state key="normal" backgroundImage="ico.grey.back">
+                                            <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="backPressed" destination="vvF-xK-e1q" eventType="touchUpInside" id="1hL-yD-nlx"/>
+                                        </connections>
+                                    </button>
+                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dDK-T2-8OL" customClass="MYButton" customModule="Kanito" customModuleProvider="target">
+                                        <rect key="frame" x="305" y="7" width="89" height="30"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                        <state key="normal" title="login/signup">
+                                            <color key="titleColor" red="0.66666666669999997" green="0.66666666669999997" blue="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="0.0"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="loginOrSignupPressed" destination="vvF-xK-e1q" eventType="touchUpInside" id="loF-yh-eH2"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="dDK-T2-8OL" firstAttribute="top" secondItem="mnq-iP-sK9" secondAttribute="top" constant="7" id="1DT-1J-Zcq"/>
+                                    <constraint firstItem="Do2-d9-3PZ" firstAttribute="centerX" secondItem="mnq-iP-sK9" secondAttribute="centerX" id="1gv-Ga-hcD"/>
+                                    <constraint firstItem="qEn-Tp-UNJ" firstAttribute="centerY" secondItem="mnq-iP-sK9" secondAttribute="centerY" id="54G-n3-ZVa"/>
+                                    <constraint firstItem="qEn-Tp-UNJ" firstAttribute="leading" secondItem="mnq-iP-sK9" secondAttribute="leading" constant="20" id="AR0-lu-oCs"/>
+                                    <constraint firstItem="Do2-d9-3PZ" firstAttribute="centerY" secondItem="mnq-iP-sK9" secondAttribute="centerY" id="VZL-vr-xVC"/>
+                                    <constraint firstAttribute="height" constant="44" id="iKi-9L-ZZ9"/>
+                                    <constraint firstAttribute="bottom" secondItem="dDK-T2-8OL" secondAttribute="bottom" constant="7" id="mMe-gc-s3R"/>
+                                    <constraint firstAttribute="trailing" secondItem="dDK-T2-8OL" secondAttribute="trailing" constant="20" id="tQm-S8-GYz"/>
+                                </constraints>
+                            </view>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" bounces="NO" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="80" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="kig-C3-r6m">
+                                <rect key="frame" x="0.0" y="90" width="414" height="520"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="SignUpDataCell" rowHeight="80" id="aly-2T-TpU" customClass="SignUpDataCell" customModule="Kanito" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="80"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="aly-2T-TpU" id="Liv-fx-Y40">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="80"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="_title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zzq-EB-uev" customClass="MYLabel" customModule="Kanito" customModuleProvider="target">
+                                                    <rect key="frame" x="20" y="5" width="374" height="20"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="20" id="S8K-IA-GRr"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="_input" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ftw-P7-fgU" customClass="MYTextField" customModule="Kanito" customModuleProvider="target">
+                                                    <rect key="frame" x="20" y="38" width="306" height="30"/>
+                                                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="30" id="bHq-qB-sFr"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                    <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" secureTextEntry="YES"/>
+                                                </textField>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xfn-ZL-4Ew" customClass="MYButton" customModule="Kanito" customModuleProvider="target">
+                                                    <rect key="frame" x="334" y="38" width="60" height="30"/>
+                                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="60" id="606-hx-HUc"/>
+                                                        <constraint firstAttribute="width" priority="750" constant="60" id="Ga3-1A-KNe"/>
+                                                        <constraint firstAttribute="height" constant="30" id="j9T-bc-zHp"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                    <state key="normal" title="#showPw">
+                                                        <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                                    </state>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                            <real key="value" value="0.0"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                    <connections>
+                                                        <action selector="showPassTapped" destination="aly-2T-TpU" eventType="touchUpInside" id="80a-eV-7uq"/>
+                                                    </connections>
+                                                </button>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FSh-FU-Wyh">
+                                                    <rect key="frame" x="20" y="73" width="374" height="1"/>
+                                                    <color key="backgroundColor" red="0.66666666669999997" green="0.66666666669999997" blue="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="1" id="Zym-gs-NbQ"/>
+                                                    </constraints>
+                                                </view>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="FSh-FU-Wyh" firstAttribute="leading" secondItem="Liv-fx-Y40" secondAttribute="leading" constant="20" id="3yI-Z1-6nu"/>
+                                                <constraint firstItem="xfn-ZL-4Ew" firstAttribute="leading" secondItem="ftw-P7-fgU" secondAttribute="trailing" constant="8" id="5Co-PK-s4c"/>
+                                                <constraint firstItem="ftw-P7-fgU" firstAttribute="top" secondItem="Zzq-EB-uev" secondAttribute="bottom" constant="13" id="86q-Yw-Pde"/>
+                                                <constraint firstAttribute="trailing" secondItem="xfn-ZL-4Ew" secondAttribute="trailing" constant="20" id="SKV-dT-cAM"/>
+                                                <constraint firstItem="Zzq-EB-uev" firstAttribute="leading" secondItem="Liv-fx-Y40" secondAttribute="leading" constant="20" id="Sgd-q3-GjO"/>
+                                                <constraint firstAttribute="trailing" secondItem="FSh-FU-Wyh" secondAttribute="trailing" constant="20" id="U2o-9m-l2E"/>
+                                                <constraint firstItem="xfn-ZL-4Ew" firstAttribute="top" secondItem="Zzq-EB-uev" secondAttribute="bottom" constant="13" id="XQD-Y3-7c6"/>
+                                                <constraint firstAttribute="trailing" secondItem="Zzq-EB-uev" secondAttribute="trailing" constant="20" id="YTn-8U-Oq5"/>
+                                                <constraint firstItem="Zzq-EB-uev" firstAttribute="top" secondItem="Liv-fx-Y40" secondAttribute="top" constant="5" id="k1P-rg-be9"/>
+                                                <constraint firstItem="ftw-P7-fgU" firstAttribute="leading" secondItem="Liv-fx-Y40" secondAttribute="leadingMargin" constant="12" id="kIk-p2-ejC"/>
+                                                <constraint firstAttribute="bottom" secondItem="FSh-FU-Wyh" secondAttribute="bottom" constant="6" id="xt6-Jt-f2Z"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="buttonWidth" destination="606-hx-HUc" id="LOR-1o-tnh"/>
+                                            <outlet property="input" destination="ftw-P7-fgU" id="FOJ-RK-h5c"/>
+                                            <outlet property="showButton" destination="xfn-ZL-4Ew" id="hqr-OZ-D1D"/>
+                                            <outlet property="title" destination="Zzq-EB-uev" id="8Hm-ud-kgo"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="SignUpDataFooter" rowHeight="45" id="FUS-XO-1fL">
+                                        <rect key="frame" x="0.0" y="108" width="414" height="45"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="FUS-XO-1fL" id="8iH-vh-KXd">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="45"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IeO-eV-gc0" customClass="MYButton" customModule="Kanito" customModuleProvider="target">
+                                                    <rect key="frame" x="20" y="8" width="374" height="30"/>
+                                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <state key="normal" title="#signUpMailFooter">
+                                                        <color key="titleColor" red="0.66274509800000003" green="0.66274509800000003" blue="0.66274509800000003" alpha="1" colorSpace="calibratedRGB"/>
+                                                    </state>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                            <real key="value" value="0.0"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                    <connections>
+                                                        <action selector="passForgotTapped" destination="vvF-xK-e1q" eventType="touchUpInside" id="kES-8i-PQT"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="IeO-eV-gc0" firstAttribute="leading" secondItem="8iH-vh-KXd" secondAttribute="leading" constant="20" id="D22-HQ-PUg"/>
+                                                <constraint firstItem="IeO-eV-gc0" firstAttribute="top" secondItem="8iH-vh-KXd" secondAttribute="top" constant="8" id="Dc8-zj-8uY"/>
+                                                <constraint firstAttribute="bottom" secondItem="IeO-eV-gc0" secondAttribute="bottom" constant="7" id="QYx-GQ-N8j"/>
+                                                <constraint firstAttribute="trailing" secondItem="IeO-eV-gc0" secondAttribute="trailing" constant="20" id="mje-3T-hNh"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="vvF-xK-e1q" id="3rS-Ed-ZbV"/>
+                                    <outlet property="delegate" destination="vvF-xK-e1q" id="96J-Xc-Ikh"/>
+                                </connections>
+                            </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xvU-CM-pH2" customClass="MYButton" customModule="Kanito" customModuleProvider="target">
+                                <rect key="frame" x="5" y="656" width="198" height="20"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="Ygs-h0-1jh"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <state key="normal" title="#termCond">
+                                    <color key="titleColor" red="0.66274509800000003" green="0.66274509800000003" blue="0.66274509800000003" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="termCond" destination="vvF-xK-e1q" eventType="touchUpInside" id="VI4-de-Odl"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lva-U3-7wc" customClass="MYButton" customModule="Kanito" customModuleProvider="target">
+                                <rect key="frame" x="211" y="656" width="198" height="20"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="gQl-oa-yDR"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <state key="normal" title="#privacy">
+                                    <color key="titleColor" red="0.66274509800000003" green="0.66274509800000003" blue="0.66274509800000003" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="privacy" destination="vvF-xK-e1q" eventType="touchUpInside" id="Ijg-gu-pGa"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="gNN-kG-mTl" secondAttribute="trailing" id="0K3-ya-9R8"/>
+                            <constraint firstItem="Lva-U3-7wc" firstAttribute="width" secondItem="xvU-CM-pH2" secondAttribute="width" id="3BB-gA-4hM"/>
+                            <constraint firstItem="gNN-kG-mTl" firstAttribute="top" secondItem="Lva-U3-7wc" secondAttribute="bottom" constant="5" id="5EI-We-6CZ"/>
+                            <constraint firstItem="mnq-iP-sK9" firstAttribute="top" secondItem="C4M-Kf-WSX" secondAttribute="bottom" id="617-2W-Kit"/>
+                            <constraint firstItem="NdR-AI-Xqs" firstAttribute="top" secondItem="gNN-kG-mTl" secondAttribute="bottom" id="GKk-jX-2gj"/>
+                            <constraint firstAttribute="trailing" secondItem="mnq-iP-sK9" secondAttribute="trailing" id="Jrn-gQ-f7o"/>
+                            <constraint firstItem="Lva-U3-7wc" firstAttribute="leading" secondItem="xvU-CM-pH2" secondAttribute="trailing" constant="8" id="QB1-vL-VsJ"/>
+                            <constraint firstAttribute="trailing" secondItem="Lva-U3-7wc" secondAttribute="trailing" constant="5" id="X58-yW-rba"/>
+                            <constraint firstItem="gNN-kG-mTl" firstAttribute="leading" secondItem="iN1-fc-F8u" secondAttribute="leading" id="XUv-Kd-Aq0"/>
+                            <constraint firstItem="mnq-iP-sK9" firstAttribute="leading" secondItem="iN1-fc-F8u" secondAttribute="leading" id="YWB-U3-Yrg"/>
+                            <constraint firstItem="xvU-CM-pH2" firstAttribute="leading" secondItem="iN1-fc-F8u" secondAttribute="leading" constant="5" id="Ykb-fa-4KK"/>
+                            <constraint firstItem="kig-C3-r6m" firstAttribute="top" secondItem="mnq-iP-sK9" secondAttribute="bottom" constant="26" id="b8I-SQ-Igp"/>
+                            <constraint firstItem="kig-C3-r6m" firstAttribute="leading" secondItem="iN1-fc-F8u" secondAttribute="leading" id="g58-Ej-GHm"/>
+                            <constraint firstAttribute="trailing" secondItem="kig-C3-r6m" secondAttribute="trailing" id="pzd-kE-YbK"/>
+                            <constraint firstItem="NdR-AI-Xqs" firstAttribute="top" secondItem="kig-C3-r6m" secondAttribute="bottom" constant="126" id="qmT-9A-SkO"/>
+                            <constraint firstItem="gNN-kG-mTl" firstAttribute="top" secondItem="xvU-CM-pH2" secondAttribute="bottom" constant="5" id="rZu-iT-1fd"/>
+                            <constraint firstItem="Lva-U3-7wc" firstAttribute="leading" secondItem="xvU-CM-pH2" secondAttribute="trailing" constant="8" id="tWc-mZ-tom"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="m50-oo-k3U"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="loginTypeBtn" destination="dDK-T2-8OL" id="RpE-Ry-JuN"/>
+                        <outlet property="tableView" destination="kig-C3-r6m" id="hyP-27-SIQ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8ms-cb-9t2" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="rBo-U8-0BG">
+                    <connections>
+                        <action selector="showTermCond" destination="vvF-xK-e1q" id="2a9-tz-ILV"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="-2394.202898550725" y="-1947.554347826087"/>
+        </scene>
+        <!--Sign Up Term Cond Ctrl-->
+        <scene sceneID="NdA-AZ-T9p">
+            <objects>
+                <viewController storyboardIdentifier="SignUpTermCondCtrl" id="ZFq-vW-FFV" customClass="SignUpTermCondCtrl" customModule="Kanito" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Lgq-kZ-fBg"/>
+                        <viewControllerLayoutGuide type="bottom" id="sb9-Ce-qVU"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="LNg-4P-2wD">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="u2k-7x-tTx">
+                                <rect key="frame" x="0.0" y="65" width="414" height="671"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <string key="text">CONDIZIONI GENERALI D’USO  E DI VENDITA DI KANITO
+
+
+ART. 1 - CONTRATTO TRA L’UTENTE E KANITO
+
+KANITO (“Il Servizio”) è un servizio dedicato al mondo della cinofilia accessibile via internet, composto da una community (“Community”) e da un software gestionale (“Gestionale” o "Software"), e fornito da  ECO ALANNO RAPPRESENTANZE TECNOLOGICHE S.R.L., con sede in Roma, V.le Cortina d’Ampezzo 47, P.IVA 09356111006.
+
+La Community è uno spazio online dove proprietari di cani e attività cinofile possono creare un proprio profilo, un profilo per i propri cani e condividere i relativi contenuti con altri amanti dei cani.
+
+Il Gestionale è un software online che permette ad attività cinofile di organizzare la gestione quotidiana della propria attività e ricevere prenotazioni da parte dei propri clienti.
+
+Il Servizio ti è offerto sia come utente registrato che come visitatore, a fronte dell’accettazione senza alcuna modifica dei termini, condizioni e avvisi contenuti nel presente accordo.
+
+Alcune funzionalità del Servizio sono accessibili gratuitamente, altre sono a pagamento a fronte di un abbonamento periodico. Per maggiori informazioni sui costi, fai riferimento all’articolo 5 del presente contratto.
+
+Se non condividi queste Condizioni d’Uso  e di Vendita, sia ora che in futuro, ti preghiamo di non utilizzare né accedere al Servizio. È tuo compito controllare periodicamente il Servizio per verificare la presenza di possibili aggiornamenti alle presenti Condizioni d’Uso e di Vendita e di prenderne nota. Puoi verificare in fondo a questo documento la “DATA DI ULTIMA REVISIONE” per sapere a quando risale l’ultimo aggiornamento.
+
+Per ricevere una copia del presente Contratto, scrivici un’email a info@kanito.it con oggetto “Richiesta invio Condizioni d’Uso e di Vendita”.
+
+
+ART. 2 - CAMBIAMENTI ALLE CONDIZIONI D’USO E DI VENDITA, AVVISI
+
+Ci riserviamo il diritto di modificare o terminare tutti i servizi relativi a KANITO per qualsiasi ragione, con preavviso ragionevole, senza doverne conto a persona o società alcuna, alcun utente o terze parti. Ci riserviamo inoltre il diritto di modificare queste Condizioni d’Uso  e di Vendita ogni qual volta lo riteniamo necessario e senza preavviso.
+Se usufruisci dei nostri servizi a pagamento, hai diritto a 10 (dieci) giorni di preavviso oltre al rimborso dei giorni del tuo abbonamento non usufruiti.
+Sei responsabile di leggere queste Condizioni d’Uso e di Vendita per essere al corrente con gli aggiornamenti. Se non condividi questi aggiornamenti e cambiamenti nelle Condizioni d’Uso e di Vendita, puoi cancellare la tua iscrizione al Servizio.
+
+KANITO potrà fornirti avvisi riguardanti i servizi KANITO o queste Condizioni d’Uso e di Vendita per posta ordinaria, email o tramite pubblicazione sul suo sito Web.
+
+
+CONDIZIONI GENERALI D'USO
+
+
+ART. 3 - COLLEGAMENTI A SITI DI TERZE PARTI
+
+KANITO potrebbe contenere collegamenti ad altri siti web (“Siti Collegati”). I Siti Collegati non sono in alcun modo sotto il controllo di KANITO e KANITO non è responsabile per i contenuti d’alcun Servizio Collegato, inclusi eventuali collegamenti in esso contenuto, o d’alcuna modifica o aggiornamento a questi.
+KANITO ti fornisce questi collegamenti esclusivamente per comodità, e la presenza di questi collegamenti non implica alcun tipo di raccomandazione da parte di KANITO per il Servizio collegato in oggetto o alcun tipo di associazione con i suoi operatori.
+
+
+ART. 4 - REQUISITI E ISCRIZIONE
+
+Devi aver compiuto i 18 anni di età per utilizzare KANITO. Registrandoti, assicuri e garantisci di aver compiuto i 18 anni d’età e che hai piena capacità di comprendere, accettare e condividere queste Condizioni d’Uso e di Vendita. Al momento della registrazione, affinché tu possa diventare un utente KANITO, dovrai fornire informazioni veritiere, accurate e complete.
+
+In fase di registrazione, ti sarà richiesto di scegliere un nome utente, una password, e sarai responsabile per tutte le attività svolte con il suddetto nome utente e per custodire la tua password in un luogo sicuro. È nostra facoltà rifiutare un determinato nome utente da te scelto che possa impersonare qualcun altro, che sia protetto da copyright o marchio registrato, che sia volgare, offensivo ovvero inappropriato, o che possa presumere un utilizzo improrio del Servizio, il tutto determinato a nostra sola discrezione.
+
+
+ART. 5 - COMMUNITY: TIPI DI ACCOUNT, PROFILI DI CANI
+
+Puoi registrarti come utente privato o come attività cinofila.
+
+Scegli Utente Privato se sei proprietario di uno o più cani e abbia voglia di condividere foto, video e altre informazioni.  Questo tipo di account è offerto esclusivamente per uso privato e a scopi non-commerciali. Un utente privato non potrà aprire più di un profilo. Una doppia registrazione al Servizio comporta la cancellazione di entrambi gli account e al blocco permanente dei tuoi accessi.
+
+Scegli Attività Cinofila se gestisci qualsiasi tipo attività cinofila e desideri avere la propria vetrina virtuale su KANITO per promuovere i propri prodotti e servizi. A titolo esemplificativo, alcune di queste attività sono: addestratori, allevamenti, associazioni, canili e rifugi, dogsitter, negozi di articoli per cani, produttori o distributori di alimenti per cani, riviste di settore, veterinari. Ti preghiamo di selezionare solo le tipologie di servizi offerti dalla tua attività. Altre eventualmente indicate sul tuo profilo e non offerte dalla tua attività saranno rimosse senza preavviso. Non è consentita l’iscrizione con più nome utente per la stessa attività. Una doppia registrazione al Servizio comporta alla cancellazione d’entrambi gli account e al blocco permanente dei tuoi accessi.
+
+Sia gli utenti di tipo privato che le attività cinofile possono aprire diversi profili per i cani di cui risultino proprietari o per i quali ne abbiano diritto di mostrare le relative informazioni. Aprendo un profilo di un cane tu dichiari di esserne proprietario o di possederne i diritti d’utilizzo dei contenuti caricati sul Servizio e che questi ultimi non violino alcun copyright.
+
+Ogni cane dovrà avere il suo profilo. Ti preghiamo quindi di non caricare materiale relativo a più cani sullo stesso profilo. Profili di cani contenenti foto di più cani saranno rimossi senza preavviso.
+
+KANITO vieta espressamente la creazione di profili di cani in adozione. Per la adozioni è obbligatorio usare la funzione Annunci. Profili di cani che risultino in adozione saranno immediatamente rimossi senza preavviso.
+
+
+ART. 6 - COMMUNITY: GIUSTA CONDOTTA E CONTENUTI
+
+Non puoi utilizzare i servizi offerti da KANITO per scopi illegali o non autorizzati. Se sei un utente internazionale dichiari di accettare ogni regola locale relativa alla giusta condotta da seguire e ai contenuti dichiarati appropriati, incluse le leggi che regolamentano l’esportazione di dati dal tuo paese di appartenenza. Sei il solo responsabile per la condotta e per qualsiasi dato, testo, informazione, foto, collegamento e ogni altro tipo di contenuto (“Contenuti”) che caricherai, pubblicherai e mostrerai sul Servizio.
+
+Noi ci riserviamo il diritto, ma non l’obbligo, di rimuovere i Contenuti che a nostro insindacabile giudizio sono fuori legge, fraudolenti, minacciosi, vili, diffamatori, osceni o comunque non tollerabili, che violi la proprietà intellettuale di qualsiasi parte o altro diritto proprietario o queste Condizioni di Servizio.
+
+Accetti di pagare qualsiasi costo relativo a copyright, royalty, tassa o altra somma di denaro dovuta a terze parti e relativa alla pubblicazione di Contenuti sul Servizio.
+Ogni informazione considerata da qualsiasi utente come impropria o oscena verrà rimossa o modificata senza alcun preavviso.
+
+Altri esempi di usi illegali o impropri sono, ma non sono limitati a:
+
+    Modificare, adattare, tradurre o effettuare “reverse engineering” di qualsiasi parte del Servizio;
+    Fare uso di robot, spider, applicazioni di ricerca e acquisizione, o qualsiasi altro mezzo per ottenere o indicizzare qualsiasi parte del Servizio;
+    Memorizzare qualsiasi tipo di informazione relativa agli Utenti (inclusi nome utente, password e/o indirizzi email) per usi non autorizzati;
+    Editare o suddividere qualsiasi sezione di qualsiasi pagina web o delle immagini presenti sul Servizio che fanno parte integrante di KANITO;
+    Creare account con mezzi automatici o attraverso pretese false o fraudolente;
+    Creare o trasmettere qualsiasi tipo di comunicazione digitale non richiesta come “spam”, “chain letter” ad altri Utenti, o che interferiscano con l’uso dilettevole del Servizio da parte di altri utenti;
+    Inviare Contenuti a terze parti senza il consenso per iscritto di queste;
+    Indirizzare qualsiasi utente a qualsiasi Contenuto di terze parti (anche attraverso collegamenti) senza l’esplicito consenso scritto dell’utente;
+    Inviare Contenuti che si presentino falsamente come originati e/o sponsorizzati da KANITO;
+    Inviare Contenuti che violino, si approprino senza diritto, o violino proprietà intellettuale, pubblicità, privacy o qualsiasi altro diritto di proprietà di altre parti;
+    Trasmettere virus, worm, difetti, cavalli di Troia o qualsiasi altra forma di natura distruttiva;
+    Inviare Contenuti illegali ovvero promuovere o incoraggiare qualsiasi attività illegale;
+    Inviare informazioni false o ingannevoli;
+    Inviare prodotti commerciai e/o offerte senza il consenso scritto di KANITO;
+    Creare qualsiasi interferenza, interruzione o sovraccarico del Servizio e dei relativi server e reti;
+    Vendere o trasferire il tuo account ad altre persone;
+    Fare uso del Servizio in qualsiasi modo non permesso da qualsiasi legge applicabile al caso;
+    Richiedere denaro per cani in adozione da te pubblicati nella sezione Annunci;
+    Richiedere denaro per qualsiasi tua attività pubblicata su KANITO;
+
+
+Anche se KANITO proibisce questo tipo di comportamento e contenuti, tu dichiari di comprendere ed accettare che potresti comunque essere sottoposto a questi Contenuti e che fai uso dei servizi KANITO a tuo rischio e pericolo. In caso sapessi di suddetti contenuti e comportamenti, ti preghiamo di comunicarcelo il prima possibile inviando un’email all’indirizzo info@kanito.it.
+
+KANITO non ha alcun obbligo di monitorare le comunicazioni tra i suoi utenti attraverso la sua piattaforma. Ad ogni modo, KANITO si riserva il diritto di controllare ogni tipo di contenuto caricato sul Servizio e rimuoverlo a sua insindacabile discrezione. KANITO si riserva il diritto di terminare il tuo accesso a qualsiasi funzione e/o modulo del Servizio in ogni momento e senza preavviso alcuno. Nessun Contenuto fornito dall’Utente è verificato né controllato prima della sua pubblicazione, né questi contenuti rispecchiano le opinioni di KANITO.
+
+Ti invitiamo ad usare sempre e comunque la giusta precauzione nell’inviare informazioni di identificazione personale relative a te o tuoi familiari in ogni sezione del Servizio. KANITO non controlla, appoggia i contenuti, messaggi o informazioni presenti in qualsiasi mezzo di comunicazione e per questo KANITO declina ogni responsabilità relativa all’utilizzo del Servizio e a qualsiasi azione conseguente alla tua partecipazione in qualsiasi sezione pubblica del Servizio.
+
+In caso decidessi di incontrare personalmente altre persone conosciute attraverso il Servizio, sia direttamente che indirettamente, dichiari di agire a tuo rischio e pericolo. KANITO declina qualsiasi responsabilità relativa a comportamenti e azioni impropri, pericolosi e illegali che potrebbero risultare dalla suddetta decisione e che potrebbe arrecare danni a te, ai tuoi compagni o a qualsiasi altro partecipante a questo incontro.
+
+Sei il solo responsabile di effettuare copie di sicurezza (“backup”) e agisci esclusivamente a tuo costo per sostituire qualsiasi Contenuto Utente che avessi inviato o memorizzato sul Servizio o fornito alla Società.
+
+
+ART. 7 - COMMUNITY: UTENTI PRIVATI, OPERATORI CINOFILI. USO NON COMMERCIALE
+
+Agli Utenti Privati non è permesso fare uso del proprio account a scopo commerciale. Questo comportamento scorretto rappresenta inadempienza contrattuale da parte dell’utente e comporta la cancellazione immediata di questi contenuti commerciali e/o la cancellazione del proprio account senza preavviso e senza che nulla sia dovuto da  KANITO all’utente per qualsiasi conseguenza sia diretta che indiretta dalla sopracitata cancellazione.
+
+Alle Attività Cinofile è permesso promuovere i propri prodotti e servizi esclusivamente tramite gli strumenti offerti da KANITO. Non è permesso contattare gli Utenti Privati offrendo loro proposte commerciali di alcun genere ne pubblicare un gran numero di informazioni a carattere commerciale. Questo comportamento scorretto rappresenta inadempienza contrattuale da parte dell’utente e comporta la cancellazione di questi contenuti commerciali e l’immediata cancellazione del proprio account e di tutti i contenuti ad esso collegati senza preavviso e senza che nulla sia dovuto da  KANITO all’utente.
+
+Per proteggere i propri Utenti da messaggi di carattere commerciale, catene promozionali o qualsiasi altro mezzo di promozione di offerte di qualsiasi tipo di prodotto o servizio, KANITO si riserva il diritto di limitare il numero di messaggi che ogni utente può inviare nell’arco di 24 ore. Questo limite può essere cambiato da KANITO senza preavviso. In caso che un utente invii messaggi di carattere commerciale ad altri utenti, sia singolarmente o simultaneamente attraverso invii di massa, questo comportamento rappresenta inadempienza contrattuale, oltre ad arrecare un danno materiale a KANITO, difficile da stimare. Questo danno può quantificarsi in maniera ragionevole nell’ammontare di 50 EURO per ogni messaggio inviato attraverso qualsiasi altro mezzo. KANITO ha il diritto ad essere rimborsato per qualsiasi danno o perdita subita che ecceda il limite di 50 EURO.
+ 
+
+ART. 8 - COMMUNITY: CONTROVERSIE TRA UTENTI
+
+Sei il solo responsabile per le tue azioni e interazioni con altri membri. KANITO ha il diritto ma non l’obbligo di monitorare qualsiasi discussione che possa nascere tra gli utenti.
+
+
+ART. 9 - SOFTWARE: CARATTERISTICHE
+
+KANITO offre il software gestionale accessibile via internet per la tua attività cinofila. Il software è raggiungibile dal menu Software Gestionale e viene fornito in abbonamento secondo la formula “quello che vedi è ciò che ottieni". Nuove funzioni rilasciate per il tuo tipo di abbonamento saranno incluse automaticamente e senza costi aggiuntivi.
+
+Il Software è disponibile 24 ore al giorno, 7 giorni su 7. In caso non fosse accessibile ti preghiamo di scriverci immediatamente a help@kanito.it.
+In caso di interruzione del servizio per più di cinque ore, KANITO ti riconoscerà a titolo gratuito una settimana aggiuntiva dei servizi già sottoscritti.
+
+L’accesso al tuo account sul software gestionale online ti viene garantito per tutta la durata dell’abbonamento. In caso di mancato rinnovo, il tuo account verrà sospeso per 10 (dieci) giorni, decorsi i quali sarà cancellato insieme a tutti i dati ad esso associati. Non è possibile richiedere in alcun momento il download o l’invio dei dati relativi al tuo account.
+
+
+ART. 10 - SOFTWARE: COMPATIBILITA', BACKUP, ERRORI E SERVIZIO CLIENTI GRATUITO
+
+Il Software è accessibile da tutti i dispositivi che abbiano un browser internet installato ed una connessione internet attiva. Dipendentemente dal tipo di sistema operativo, tipo e versione del browser, il Software potrebbe però non funzionare corretamente. KANITO non garantisce inoltre il corretto funzionamento del Software su dispositivi mobili.
+
+KANITO effettua giornalmente copie di backup del Software su macchine indipendenti le une dalle altre per aumentare il livello di sicurezza.
+
+La tua esperienza con il nostro software gestionale è per noi una priorità. Il Servizio e ogni suo aggiornamento ti vengono da noi offerti dopo un'adeguata verifica tecnica. Può però capitare che a causa di errori di codice alcune informazioni generate dal Software non siano corrette. Per questo ti offriamo un servizio clienti via email totalmente gratuito. Scrivici a help@kanito.it per qualsiasi informazione in merito al funzionamento del gestionale e saremo felici di risponderti entro circa 24 ore.
+
+
+CONDIZIONI GENERALI DI VENDITA
+
+
+ART. 11 - COSTI E PREZZI
+
+La Community è un servizio offerto gratuitamente. KANITO potrà richiedere un pagamento per qualsiasi parte del Servizio e apportare di volta in vola cambiamenti alle tariffe a suo insindacabile giudizio. Sarai comunque libero di terminare l’utilizzo di KANITO immediatamente e senza alcun costo né impegno.
+In caso KANITO decidesse di terminare la tua iscrizione a causa di un tuo inadempimento delle presenti clausole contrattuali, non avrai diritto ad alcun rimborso di alcuna parte dei costi o dei pagamenti (in caso ci siano stati).
+
+Il Software è un servizio a pagamento offerto secondo le modalità pubblicate nella pagina http://www.kanito.it/pagine/31-Gestionale-Cinofilo. Per valutare l'abbonamento al Gestionale, KANITO ti offre  un periodo di prova di 30 (trenta) giorni senza alcun impegno all’acquisto da parte tua. Al termine di questo periodo di prova potrai valutarne l’acquisto. Passati 10 (dieci) giorni dalla scadenza del suddetto periodo di prova e in assenza di una manifestazione di interesse al rinnovo del Gestionale da parte tua, KANITO si riserva il diritto di cancellare il tuo account e tutti i suoi dati in modo irreversibile senza doverti nulla.
+Potrai comunque decidere di riacquistare il Gestionale in un secondo momento ma senza poter accedere ai contenuti precedentemente caricati.
+
+Tutti i prezzi si intendono esclusi di IVA.
+
+
+ART. 12 - DIRITTO DI RECESSO
+
+Il Cliente persona fisica che acquista il Servizio, dichiarando l’estraneità dell’acquisto/sottoscrizione alla propria attività professionale e si identifichi pertanto quale consumatore al momento della registrazione, avrà facoltà di recedere dall’acquisto del Servizio senza doverne specificare il motivo fino al termine di 14 (quattordici) giorni di calendario dalla data di avvenuta conferma dell’acquisto, che sarà inviata successivamente al pagamento del prezzo.
+
+Il recesso dovrà essere esercitato con comunicazione scritta tramite PEC all'indirizzo ecoalannosrl@pec.it oppure tramite raccomandata a.r. a: ECO ALANNO RAPPRESENTANZE TECNOLOGICHE S.R.L., V.le Cortina d’Ampezzo 47, 00135 Roma.
+
+A seguito del recesso da parte del Cliente esercitato in conformità a quanto sopra ed entro 30 giorni dalla data del recesso, ECO ALANNO RAPPRESENTANZE TECNOLOGICHE S.R.L. provvederà a riaccreditare al Cliente gli importi da questi eventualmente pagati.
+
+Il Cliente prende atto che il diritto di recesso non può essere esercitato nel caso in cui il Cliente non sia un Consumatore. Nelle ipotesi in cui il diritto di recesso è escluso ai sensi della normativa applicabile ai contratti a distanza, il Cliente non potrà esercitare i diritti di cui al presente articolo.
+
+
+CONDIZIONI RELATIVE SIA ALL'USO CHE ALLA VENDITA
+
+
+ART. 13 - DIRITTI PROPRIETARI, COPYRIGHT
+
+KANITO non reclama alcun diritto di proprietà di qualsiasi Contenuto che tu invii, pubblichi o mostri sul Servizio. Dopo aver inviato, pubblicato o mostrato questi Contenuti, tu continui a detenerne la piena proprietà e continui ad avere tutti i diritti per l’utilizzo che ritieni più opportuno. Inviando, pubblicando o mostrando qualsiasi Contenuto sul Servizio KANITO, ci garantisci una licenza mondiale, non esclusiva, libera da diritti, e il diritto a farne uso, modificare, mostrare in pubblico, riprodurre, dare in sub-licenza e distribuire questi i Contenuti per qualsiasi scopo, commerciale, pubblicitario, o altro, su o in relazione al Servizio e alla sua promozione, per la preparazione di lavori che derivino da esso, o da incorporare in altri lavori questi Contenuti del’Utente, e a garantire e autorizzare sub-licenze per il futuro.
+Puoi rimuovere i tuoi Contenuti dal Servizio in ogni momento. In caso decidessi di cancellare il tuo account, la licenza sopra menzionata scadrà automaticamente e acconsenti che la Società archivi delle copie del tuo account.
+
+Non puoi pubblicare, modificare, distribuire o riprodurre in qualunque modo qualsiasi contenuto protetto da copyright, marchi, o altra informazione proprietaria che appartiene ad altri senza ottenere un consenso scritto e preventivo del proprietario dei suddetti diritti. KANITO rispetta la proprietà intellettuale di altri.
+È nostra politica rispondere a segnalazioni di possibili infrazioni che abbiano fondamento su leggi e direttive come il E.U. Copyright Directive (EUCD) o il Digital Millennium Copyright Act (DMCA).
+Se ritieni che il tuo lavoro sia stato copiato in una modo tale da costituire infrazione di copyright o se sei al corrente di qualunque altra infrazione, ti preghiamo di contattarci e fornirci le seguenti informazioni: un’autorizzazione con firma reale o elettronica del delegato del proprietario dei contenuti; una descrizione del materiale coperto da copyright che ritieni sia stato infranto; una descrizione di dove poter trovare questi contenuti sul Servizio (incluso indirizzo e screenshot allegato); il tuo indirizzo, telefono e indirizzo email; una dichiarazione scritta in cui sostieni che l’uso di tale materiale non è autorizzato da chi ne detiene i diritti, dal suo agente, o per legge; una tua dichiarazione, fatta sotto giuramento, che le informazioni da te riportate sono accurate e che tu sei il proprietario di tali contenuti o sei autorizzato ad agire nell’interesse dello stesso.
+
+ECO ALANNO RAPPRESENTANZE TECNOLOGICHE S.R.L. e i suoi affiliati e licenziatari, hanno e mantengono tutti i diritti relativi al Servizio KANITO e ai relativi servizi, che contengono informazioni proprietarie e confidenziali che sono protette da qualsiasi legge applicabile e copyright.
+KANITO fornisce all’Utente una licenza limitata, revocabile e che non può essere trasferita né venduta in sub-licenza, per riprodurre e visualizzare i contenuti del Servizio esclusivamente a scopo personale. Questa licenza esclude ogni codice software, algoritmo e porzione del front-end e del back-end del Servizio.
+
+Eccetto se espressamente autorizzato dalla ECO ALANNO RAPPRESENTANZE TECNOLOGICHE S.R.L., tu non puoi copiare, modificare, pubblicare, trasmettere, distribuire, performare, mostrare o vendere alcuna informazione proprietaria di KANITO, inclusi tutte le pubblicazioni e le foto sul Servizio. Il logo KANITO e “KANITO” sono marchi registrati di proprietà della ECO ALANNO RAPPRESENTANZE TECNOLOGICHE S.R.L.
+
+
+ART. 14 - PRIVACY
+
+Clicca qui per leggere la nostra Informativa sulla Privacy.  
+
+
+ART. 15 - LIMITAZIONI DI RESPONSABILITA’, MANLEVA
+
+KANITO e i suoi affiliati, licenziatari, soci, fornitori, consulenti e agenti non assumono alcuna responsabilità circa l’accuratezza, il contenuto, la completezza, la legalità, l’affidamento, o l’operabilità o la disponibilità delle informazioni o dei contenuti mostrati su KANITO.
+
+KANITO non assume inoltre alcune responsabilità per la condotta dei propri Utenti.
+
+Le Attività cinofile non sono affiliati in alcun modo a KANITO e le informazioni mostrate sui loro profili, come promozioni di prodotti o servizi, non devono pertanto essere intese come offerte commerciali o come consigli all’acquisto e utilizzo da parte di KANITO, dei suoi affiliati, licenziatari, soci, fornitori, consulenti e agenti, per provare, acquistare, vendere, scambiare e fare affidamento su questi prodotti, servizi e/o soluzioni proposte.
+
+Liberi KANITO da ogni richiesta per qualsiasi perdita o danno subito, costi o spese sostenute nel prendere in considerazione alcun contenuto, proposta, commerciale e non, di qualsiasi operatore cinofilo registrato presso il Servizio. Specialmente informazioni o suggerimenti relativi ad importanti aspetti quali salute, alimentazione, comportamento e consigli legali non devono essere mai presi per buoni.
+
+KANITO invita ogni utente ad informarsi periodicamente su leggi e regolamenti locali.
+
+Liberi inoltre KANITO da ogni richiesta per qualsiasi perdita o danno subito, costi o spese sostenute dovute a causa di inesattezza delle informazioni pubblicare sul tuo account del Gestionale, quali, ad esempio, prenotazioni, estratti conto e statistiche.
+
+Il Servizio e tutti i relativi contenuti sono rilasciati “così come sono”, senza alcun tipo di garanzia. KANITO respinge.
+
+Dichiari che l’uso del Servizio è interamente a tuo rischio.
+
+Per nessun motivo KANITO sarà respnsabile nei tuoi confronti per qualsiasi danno indiretto che dovesse sorgenere dall’uso di KANITO o che possa ad esso essere correlato in alcun modo, senza che KANITO sia stato messo al corrente della possibilità di tali pericoli. Questa limitazione di responsabilità si applicherà sia in caso di danni derivanti dall’uso errato dei nostri servizi, dalla loro interruzione, sospensione o terminazione. Sono inclusi i danni subiti da terze parti.
+Per nessun motivo KANITO sarà responsabile nei tuoi confronti per qualsiasi importo che superi quanto da te pagato per l’uso dei nostri servizi durante il periodo dell’abbonamento.
+
+Dichiari di manlevare e indenneizzare la ECO ALANNO RAPPRESENTANZE TECNOLOGICHE S.R.L., i suoi affiliati, licenziatari, soci, fornitori, consulenti, agenti e terze parti da e contro qualsiasi richiesta nata e in qualche modo correlata all’utilizzo di KANITO,  compresa ogni responsabilità e spesa originata da tutti le richieste, perdite, danni (attuali e futuri), cause, giudizi, spese per dispute, parcelle di avvocati, di qualunque tipo e natura.
+
+
+ART. 16 - CESSAZIONE E RISOLUZIONE DEL CONTRATTO
+
+Queste Condizioni d’Uso e di Vendita si applicano al tuo utilizzo del servizio KANITO. Possiamo terminare la tua sottoscrizione immediatamente e in qualsiasi momento senza preavviso.
+Se sei cliente del Gestionale, ti verrà inviata una comunicazione via email all’indirizzo da te indicato in fase di registrazione con 10 (giorni) di anticipo. Avrai diritto al rimborso dei giorni non usufruiti. Non avrai diritto ad alcun altro tipo di rimborso.
+Una volta terminata la tua sottoscrizione, non manterrai alcun diritto ad utilizzare i servizi KANITO. I nostri diritti proprietari, limitazioni di responsabilità, indennità, limitazioni di responsabilità e le disposizioni varie continueranno in essere dopo la cancellazione della tua sottoscrizione.
+
+
+ART. 17 - DISPOSIZIONI VARIE
+
+Accetti che questo Contratto venga governato dalla legge Italiana e che per qualsiasi disputa che dovesse nascere da o che sia in qualche modo legata a questo Contratto il foro competente sia Roma.
+
+Questo Contratto è accettato visitando il Servizio o registrandoti su KANITO e contiene l’intero accordo tra te e la ECO ALANNO RAPPRESENTANZE TECNOLOGICHE S.R.L. relativo all’uso del Servizio. Questo Contratto potrà essere modificato esclusivamente su notifica a te indirizzata dalla ECO ALANNO RAPPRESENTANZE TECNOLOGICHE S.R.L., o tramite documentazione scritta e firmata da te  un rappresentante della ECO ALANNO RAPPRESENTANZE TECNOLOGICHE S.R.L. autorizzato. A meno che diversamente dichiarato, le Condizioni persisteranno dopo la cessazione del Servizio e del Servizio. In caso qualsiasi punto di questo contratto venga considerato non valido, la restante parte del Contratto continuerà ad avere valore.
+
+Se per qualsiasi ragione una corte di competente giurisdizione giudicasse una clausola o parte di queste Condizioni non applicabili, la restante parte delle suddette condizioni continueranno ad avere effetto. Non puoi destinare queste Condizioni o alcun diritto  o delegare alcun obbligo, in tutto o in parte, sia volontariamente che seguendo legge alcuna, senza prima avere ottenuto permesso scritto. Qualsiasi destinazione o delega sarà considerata nulla e invalidata,  senza che abbia alcun effetto. I titoli degli articoli del presente Contratto sono stati inseriti per maggiore facilità di lettura e non hanno alcun effetto legale o contrattuale.
+
+Senza limitare quando sopraccitato, KANITO non sarà reso responsabile per qualsiasi ritardo o mancata prestazione che risultassero direttamente o indirettamente da fenomeni naturali, cause di forza maggiore, inclusi, senza limitazione, mancato collegamento ad Internet, rottura di componentistica del proprio computer, di reti di telecomunicazioni , reti elettriche, scioperi, conflitti lavorativi, risse, insurrezioni, disordini civili, mancanza di lavoro o materiali, incendi, inondazioni, tempeste, esplosioni, guerre, iniziative del governo, ordini di tribunali nazionali o internazionali, mancanza di servizio da terze parti, o perdita o intermittenza nella fornitura di riscaldamento, luce o aria condizionata.
+
+Queste Condizioni d’Uso e di Vendita costituiscono per intero il contratto tra te e KANITO rispetto a questa materia e annullano e sostituiscono ogni altro relativo contratto, scritto o non. Qualsiasi rinuncia a qualsiasi parte di queste Condizioni da una delle due parti dovrà essere controfirmata da entrambi.
+
+Per qualsiasi informazione relativa a questo contratto puoi contattarci a info@kanito.it.
+
+DICHIARO DI AVER LETTO IL PRESENTE CONTRATTO E DI ACCETTARE TUTTE LE DISPOSIZIONI IN ESSO CONTENUTE.
+
+DATA DI ULTIMA REVISIONE: 22 FEBBRAIO 2014</string>
+                                <color key="textColor" red="0.28958413" green="0.31462949509999999" blue="0.32950475810000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="DINAlternate-Bold" family="DIN Alternate" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rAp-cR-Okj">
+                                <rect key="frame" x="0.0" y="20" width="414" height="44"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logoOrange" translatesAutoresizingMaskIntoConstraints="NO" id="Cm2-TG-izM">
+                                        <rect key="frame" x="160" y="4" width="94" height="37"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="94" id="TZh-l8-fer"/>
+                                            <constraint firstAttribute="height" constant="37" id="qET-hK-3a1"/>
+                                        </constraints>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e20-2Q-DXf">
+                                        <rect key="frame" x="8" y="10" width="24" height="24"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="24" id="LQv-Db-Ock"/>
+                                            <constraint firstAttribute="width" constant="24" id="Tgu-Vc-3zN"/>
+                                        </constraints>
+                                        <state key="normal" backgroundImage="ico.grey.back">
+                                            <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="backPressed" destination="ZFq-vW-FFV" eventType="touchUpInside" id="om1-Ze-lDb"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="e20-2Q-DXf" firstAttribute="leading" secondItem="rAp-cR-Okj" secondAttribute="leading" constant="8" id="C56-ls-wMf"/>
+                                    <constraint firstItem="e20-2Q-DXf" firstAttribute="centerY" secondItem="rAp-cR-Okj" secondAttribute="centerY" id="CQF-Ln-eCW"/>
+                                    <constraint firstItem="Cm2-TG-izM" firstAttribute="centerX" secondItem="rAp-cR-Okj" secondAttribute="centerX" id="dvl-F2-q0k"/>
+                                    <constraint firstAttribute="height" constant="44" id="rTg-Km-Rld"/>
+                                    <constraint firstItem="Cm2-TG-izM" firstAttribute="centerY" secondItem="rAp-cR-Okj" secondAttribute="centerY" id="u42-ga-0ln"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="u2k-7x-tTx" secondAttribute="trailing" id="FkM-gU-oIE"/>
+                            <constraint firstItem="u2k-7x-tTx" firstAttribute="leading" secondItem="LNg-4P-2wD" secondAttribute="leading" id="Ho3-2y-AUX"/>
+                            <constraint firstItem="sb9-Ce-qVU" firstAttribute="top" secondItem="u2k-7x-tTx" secondAttribute="bottom" id="Lmt-HK-ek5"/>
+                            <constraint firstItem="u2k-7x-tTx" firstAttribute="top" secondItem="LNg-4P-2wD" secondAttribute="topMargin" constant="65" id="Q2i-Mm-VeI"/>
+                            <constraint firstAttribute="trailing" secondItem="rAp-cR-Okj" secondAttribute="trailing" id="hyI-7A-yOZ"/>
+                            <constraint firstItem="rAp-cR-Okj" firstAttribute="leading" secondItem="LNg-4P-2wD" secondAttribute="leading" id="nKv-TG-q3R"/>
+                            <constraint firstItem="rAp-cR-Okj" firstAttribute="top" secondItem="Lgq-kZ-fBg" secondAttribute="bottom" id="wxY-Jo-dgY"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="VZL-O7-C18"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ilm-e2-iIf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1652" y="-1948"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="facebook" width="256" height="256"/>
+        <image name="google" width="128" height="128"/>
+        <image name="ico.grey.back" width="50" height="40"/>
+        <image name="ico.grey.close" width="34" height="34"/>
+        <image name="logoOrange" width="188" height="74"/>
+    </resources>
+</document>

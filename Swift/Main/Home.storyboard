@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="MX6-QL-nCa">
+    <device id="retina5_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Home Ctrl-->
+        <scene sceneID="hXk-hP-wzn">
+            <objects>
+                <viewController storyboardIdentifier="HomeCtrl" id="MX6-QL-nCa" customClass="HomeCtrl" customModule="Kanito" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="YQD-Qk-4xw"/>
+                        <viewControllerLayoutGuide type="bottom" id="yMg-VI-vMP"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="cDx-gD-3ba">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" pagingEnabled="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hEi-1A-ygc">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" alpha="0.69999999999999996" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LaunchMain" translatesAutoresizingMaskIntoConstraints="NO" id="e9O-jt-P3H">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logoWhite" translatesAutoresizingMaskIntoConstraints="NO" id="BKq-1h-DXb">
+                                        <rect key="frame" x="128.66666666666669" y="70" width="157.00000000000006" height="62"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="62" id="dSE-G5-65P"/>
+                                            <constraint firstAttribute="width" constant="157" id="fcO-3e-AQz"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="#slogan" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u3S-MR-a8R" customClass="MYLabel" customModule="Kanito" customModuleProvider="target">
+                                        <rect key="frame" x="20" y="150" width="374" height="44"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="44" id="0gQ-Nf-jhP"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                        <color key="textColor" red="0.93333333330000001" green="0.93333333330000001" blue="0.93333333330000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="e9O-jt-P3H" secondAttribute="bottom" id="7Tl-Fn-tgq"/>
+                                    <constraint firstItem="BKq-1h-DXb" firstAttribute="top" secondItem="hEi-1A-ygc" secondAttribute="top" constant="70" id="EDc-IA-aUQ"/>
+                                    <constraint firstItem="e9O-jt-P3H" firstAttribute="centerX" secondItem="hEi-1A-ygc" secondAttribute="centerX" id="OdT-TT-REC"/>
+                                    <constraint firstItem="BKq-1h-DXb" firstAttribute="centerX" secondItem="hEi-1A-ygc" secondAttribute="centerX" id="Uxt-58-daB"/>
+                                    <constraint firstItem="u3S-MR-a8R" firstAttribute="leading" secondItem="hEi-1A-ygc" secondAttribute="leading" constant="20" id="e2I-rm-Gb5"/>
+                                    <constraint firstItem="e9O-jt-P3H" firstAttribute="leading" secondItem="hEi-1A-ygc" secondAttribute="leading" id="erq-Vh-eRy"/>
+                                    <constraint firstAttribute="trailing" secondItem="u3S-MR-a8R" secondAttribute="trailing" constant="20" id="g3C-ag-TNF"/>
+                                    <constraint firstItem="e9O-jt-P3H" firstAttribute="top" secondItem="hEi-1A-ygc" secondAttribute="top" id="hFG-an-EHf"/>
+                                    <constraint firstItem="u3S-MR-a8R" firstAttribute="top" secondItem="hEi-1A-ygc" secondAttribute="top" constant="150" id="jgf-6y-mzs"/>
+                                    <constraint firstItem="e9O-jt-P3H" firstAttribute="centerY" secondItem="hEi-1A-ygc" secondAttribute="centerY" id="naa-xG-qUX"/>
+                                    <constraint firstAttribute="trailing" secondItem="e9O-jt-P3H" secondAttribute="trailing" id="usq-Ci-ozy"/>
+                                </constraints>
+                            </scrollView>
+                            <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="65J-bD-EC5">
+                                <rect key="frame" x="173.66666666666666" y="574" width="67" height="37"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="67" id="Zmr-q7-KcF"/>
+                                </constraints>
+                                <color key="pageIndicatorTintColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="currentPageIndicatorTintColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </pageControl>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bSf-Qg-GK7" userLabel="Main Footer Login">
+                                <rect key="frame" x="0.0" y="631" width="414" height="105"/>
+                                <subviews>
+                                    <button hidden="YES" opaque="NO" alpha="0.90000000000000002" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CzV-hQ-UW5" customClass="MYButton" customModule="Kanito" customModuleProvider="target">
+                                        <rect key="frame" x="212.66666666666663" y="2" width="189.33333333333337" height="46"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="16"/>
+                                        <state key="normal" title="#signup">
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="3"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="signinTapped" destination="MX6-QL-nCa" eventType="touchUpInside" id="6Mr-EI-634"/>
+                                        </connections>
+                                    </button>
+                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tOG-ew-hyt" customClass="MYButton" customModule="Kanito" customModuleProvider="target">
+                                        <rect key="frame" x="12" y="68" width="390" height="22"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="22" id="XBY-aD-cvB"/>
+                                            <constraint firstAttribute="height" constant="40" id="s08-Uh-MgQ"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <state key="normal" title="#anonLogin">
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="0.0"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <variation key="default">
+                                            <mask key="constraints">
+                                                <exclude reference="s08-Uh-MgQ"/>
+                                            </mask>
+                                        </variation>
+                                        <connections>
+                                            <action selector="anonTapped" destination="MX6-QL-nCa" eventType="touchUpInside" id="dkh-zv-gP5"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" alpha="0.90000000000000002" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dX9-rZ-iMV" customClass="MYButton" customModule="Kanito" customModuleProvider="target">
+                                        <rect key="frame" x="127" y="2" width="160" height="46"/>
+                                        <color key="backgroundColor" red="0.66274509800000003" green="0.66274509800000003" blue="0.66274509800000003" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="160" id="KZg-gZ-7D5"/>
+                                            <constraint firstAttribute="height" constant="46" id="MhA-Nr-glB"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="16"/>
+                                        <state key="normal" title="#login">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="3"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="loginTapped" destination="MX6-QL-nCa" eventType="touchUpInside" id="HeK-Ur-YBV"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="tOG-ew-hyt" secondAttribute="trailing" constant="12" id="EOJ-DG-etH"/>
+                                    <constraint firstItem="dX9-rZ-iMV" firstAttribute="centerX" secondItem="bSf-Qg-GK7" secondAttribute="centerX" id="ILR-t8-fCf"/>
+                                    <constraint firstItem="tOG-ew-hyt" firstAttribute="leading" secondItem="bSf-Qg-GK7" secondAttribute="leading" constant="12" id="SBx-Ti-Sn5"/>
+                                    <constraint firstAttribute="height" constant="105" id="bMZ-lq-7g1"/>
+                                    <constraint firstAttribute="bottom" secondItem="dX9-rZ-iMV" secondAttribute="bottom" constant="57" id="fwU-Ob-GyI"/>
+                                    <constraint firstAttribute="bottom" secondItem="tOG-ew-hyt" secondAttribute="bottom" constant="15" id="lyd-Pg-dP8"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.66666666666666663" green="0.66666666666666663" blue="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="yMg-VI-vMP" firstAttribute="top" secondItem="bSf-Qg-GK7" secondAttribute="bottom" id="4q2-bD-CRk"/>
+                            <constraint firstAttribute="trailing" secondItem="hEi-1A-ygc" secondAttribute="trailing" id="9kd-V9-Vft"/>
+                            <constraint firstItem="65J-bD-EC5" firstAttribute="centerX" secondItem="cDx-gD-3ba" secondAttribute="centerX" id="GOd-6z-r64"/>
+                            <constraint firstItem="hEi-1A-ygc" firstAttribute="leading" secondItem="cDx-gD-3ba" secondAttribute="leading" id="aCq-vD-3RX"/>
+                            <constraint firstItem="hEi-1A-ygc" firstAttribute="top" secondItem="cDx-gD-3ba" secondAttribute="top" id="fS9-6v-Ub3"/>
+                            <constraint firstItem="yMg-VI-vMP" firstAttribute="top" secondItem="hEi-1A-ygc" secondAttribute="bottom" id="gcI-t2-mur"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="65J-bD-EC5" secondAttribute="bottom" constant="125" id="lZj-hF-sq7"/>
+                            <constraint firstItem="bSf-Qg-GK7" firstAttribute="leading" secondItem="cDx-gD-3ba" secondAttribute="leading" id="vKv-b9-b33"/>
+                            <constraint firstAttribute="trailing" secondItem="bSf-Qg-GK7" secondAttribute="trailing" id="zTz-YD-fy8"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="UCj-QE-SyG"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="footLoginView" destination="bSf-Qg-GK7" id="H6X-wc-aLS"/>
+                        <outlet property="pageControl" destination="65J-bD-EC5" id="1FM-T5-spq"/>
+                        <outlet property="scrollView" destination="hEi-1A-ygc" id="4Mp-cG-w7s"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nhJ-KK-svY" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1850.7246376811595" y="-1119.2934782608697"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="LaunchMain" width="1242" height="2208"/>
+        <image name="logoWhite" width="314" height="122"/>
+    </resources>
+</document>

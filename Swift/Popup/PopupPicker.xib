@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="PopupPicker" customModule="Kanito" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view alpha="0.65000000000000002" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0FL-j8-hfJ">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mJP-ro-8YM">
+                    <rect key="frame" x="0.0" y="375" width="375" height="241"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="_title" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="58c-QS-IBa" customClass="MYLabel" customModule="Kanito" customModuleProvider="target">
+                            <rect key="frame" x="8" y="8" width="359" height="24"/>
+                            <color key="backgroundColor" red="0.050980392159999999" green="0.51764705879999995" blue="0.53725490200000003" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="24" id="ulO-Qr-bJq"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="16"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="C6r-3E-MLM">
+                            <rect key="frame" x="8" y="40" width="359" height="193"/>
+                            <connections>
+                                <outlet property="dataSource" destination="iN0-l3-epB" id="ByG-Ij-fq2"/>
+                                <outlet property="delegate" destination="iN0-l3-epB" id="zIs-jC-Skt"/>
+                            </connections>
+                        </pickerView>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="C6r-3E-MLM" secondAttribute="bottom" constant="8" id="1N6-PN-FI6"/>
+                        <constraint firstItem="58c-QS-IBa" firstAttribute="leading" secondItem="mJP-ro-8YM" secondAttribute="leading" constant="8" id="GdN-CM-bdH"/>
+                        <constraint firstAttribute="trailing" secondItem="58c-QS-IBa" secondAttribute="trailing" constant="8" id="KqW-rd-m98"/>
+                        <constraint firstAttribute="height" constant="241" id="PTT-p0-mcV"/>
+                        <constraint firstItem="C6r-3E-MLM" firstAttribute="top" secondItem="58c-QS-IBa" secondAttribute="bottom" constant="8" id="a8W-Rn-DLu"/>
+                        <constraint firstItem="58c-QS-IBa" firstAttribute="top" secondItem="mJP-ro-8YM" secondAttribute="top" constant="8" id="fKd-T6-VHb"/>
+                        <constraint firstItem="C6r-3E-MLM" firstAttribute="leading" secondItem="mJP-ro-8YM" secondAttribute="leading" constant="8" id="jPC-ao-zLf"/>
+                        <constraint firstAttribute="trailing" secondItem="C6r-3E-MLM" secondAttribute="trailing" constant="8" id="p2f-Zi-JEY"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1ad-cn-vow" customClass="MYButton" customModule="Kanito" customModuleProvider="target">
+                    <rect key="frame" x="2" y="617" width="183" height="48"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="48" id="h0v-hh-4Tm"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                    <state key="normal" title="#cancel">
+                        <color key="titleColor" red="0.87058823529999996" green="0.20784313730000001" blue="0.29411764709999999" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="cancelTapped" destination="iN0-l3-epB" eventType="touchUpInside" id="yhb-tV-Nqp"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8kD-hL-vfI" customClass="MYButton" customModule="Kanito" customModuleProvider="target">
+                    <rect key="frame" x="190" y="617" width="183" height="48"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                    <state key="normal" title="#confirm">
+                        <color key="titleColor" red="0.21176470589999999" green="0.51764705879999995" blue="0.53725490200000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="confirmTapped" destination="iN0-l3-epB" eventType="touchUpInside" id="Wcy-SU-gfv"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="8kD-hL-vfI" firstAttribute="leading" secondItem="1ad-cn-vow" secondAttribute="trailing" constant="5" id="4aC-JS-dKJ"/>
+                <constraint firstItem="8kD-hL-vfI" firstAttribute="leading" secondItem="1ad-cn-vow" secondAttribute="trailing" constant="5" id="BdC-Jk-NFH"/>
+                <constraint firstItem="8kD-hL-vfI" firstAttribute="top" secondItem="mJP-ro-8YM" secondAttribute="bottom" constant="1" id="BdW-xY-Z2D"/>
+                <constraint firstItem="0FL-j8-hfJ" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="Bvz-nC-Id8"/>
+                <constraint firstAttribute="bottom" secondItem="0FL-j8-hfJ" secondAttribute="bottom" id="G6B-kB-MSc"/>
+                <constraint firstAttribute="trailing" secondItem="0FL-j8-hfJ" secondAttribute="trailing" id="HzV-Dw-rfu"/>
+                <constraint firstItem="0FL-j8-hfJ" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="KHj-GZ-aMq"/>
+                <constraint firstAttribute="trailing" secondItem="8kD-hL-vfI" secondAttribute="trailing" constant="2" id="OtD-ck-Qbl"/>
+                <constraint firstItem="8kD-hL-vfI" firstAttribute="width" secondItem="1ad-cn-vow" secondAttribute="width" id="Sz7-n8-rJ1"/>
+                <constraint firstAttribute="bottom" secondItem="8kD-hL-vfI" secondAttribute="bottom" constant="2" id="bht-Ul-bQl"/>
+                <constraint firstItem="1ad-cn-vow" firstAttribute="top" secondItem="mJP-ro-8YM" secondAttribute="bottom" constant="1" id="ctU-nE-15S"/>
+                <constraint firstAttribute="trailing" secondItem="mJP-ro-8YM" secondAttribute="trailing" id="dBJ-dT-JfX"/>
+                <constraint firstItem="1ad-cn-vow" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="2" id="gQ6-3f-VHX"/>
+                <constraint firstAttribute="bottom" secondItem="1ad-cn-vow" secondAttribute="bottom" constant="2" id="sj5-Lu-3E4"/>
+                <constraint firstItem="mJP-ro-8YM" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="tSY-Eb-ddR"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <connections>
+                <outlet property="myPicker" destination="C6r-3E-MLM" id="Rmy-yd-wPv"/>
+                <outlet property="title" destination="58c-QS-IBa" id="FoY-G6-JJo"/>
+            </connections>
+            <point key="canvasLocation" x="89.5" y="98.5"/>
+        </view>
+    </objects>
+</document>

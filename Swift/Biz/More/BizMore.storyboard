@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="cAH-zG-JHr">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--BizMoreCtrl-->
+        <scene sceneID="H7K-fv-est">
+            <objects>
+                <viewController storyboardIdentifier="BizMoreCtrl" id="cAH-zG-JHr" userLabel="BizMoreCtrl" customClass="BizMoreCtrl" customModule="Kanito" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="GQE-Gq-sM5"/>
+                        <viewControllerLayoutGuide type="bottom" id="BFt-Jh-G53"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="d0t-Wo-jpY">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="wVM-uY-Fe3">
+                                <rect key="frame" x="0.0" y="20" width="375" height="579"/>
+                                <color key="backgroundColor" red="0.97647058819999999" green="0.97647058819999999" blue="0.97647058819999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="BizMore00" textLabel="TFa-dG-1nY" rowHeight="30" style="IBUITableViewCellStyleDefault" id="Ssa-V7-RRW">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="30"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Ssa-V7-RRW" id="DPp-en-XGb">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="29.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="TFa-dG-1nY">
+                                                    <rect key="frame" x="15" y="0.0" width="345" height="29.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" red="0.97647058819999999" green="0.97647058819999999" blue="0.97647058819999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" red="0.97647058819999999" green="0.97647058819999999" blue="0.97647058819999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="BizMore01" textLabel="iuC-Wm-tZO" detailTextLabel="LOV-fB-Qww" imageView="QpF-Dc-Lc2" rowHeight="107" style="IBUITableViewCellStyleSubtitle" id="0LD-h1-CEY">
+                                        <rect key="frame" x="0.0" y="58" width="375" height="107"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="0LD-h1-CEY" id="8Jb-KU-joI">
+                                            <rect key="frame" x="0.0" y="0.0" width="342" height="106.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="iuC-Wm-tZO">
+                                                    <rect key="frame" x="73" y="36" width="33.5" height="20.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Subtitle" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="LOV-fB-Qww">
+                                                    <rect key="frame" x="73" y="56.5" width="44" height="14.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="ico.grey.customer" id="QpF-Dc-Lc2">
+                                                    <rect key="frame" x="15" y="32" width="43" height="42"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                </imageView>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="BizMore02" textLabel="oFs-Mx-kgA" imageView="rdK-F2-vih" rowHeight="49" style="IBUITableViewCellStyleDefault" id="81u-ja-Uj0">
+                                        <rect key="frame" x="0.0" y="165" width="375" height="49"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="81u-ja-Uj0" id="Lyd-cB-KDf">
+                                            <rect key="frame" x="0.0" y="0.0" width="342" height="48.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="oFs-Mx-kgA">
+                                                    <rect key="frame" x="73" y="0.0" width="267" height="48.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="ico.grey.customer" id="rdK-F2-vih">
+                                                    <rect key="frame" x="15" y="3" width="43" height="42"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                </imageView>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                                <sections/>
+                                <connections>
+                                    <outlet property="dataSource" destination="cAH-zG-JHr" id="tO8-4J-MoM"/>
+                                    <outlet property="delegate" destination="cAH-zG-JHr" id="WEY-61-qun"/>
+                                </connections>
+                            </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZKy-5Z-d74" customClass="MYButton" customModule="Kanito" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="600" width="375" height="50"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="#logout">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="logout" destination="cAH-zG-JHr" eventType="touchUpInside" id="7Cs-fQ-XDF"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.97647058819999999" green="0.97647058819999999" blue="0.97647058819999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="wVM-uY-Fe3" secondAttribute="trailing" id="2Hy-Rd-1zz"/>
+                            <constraint firstItem="ZKy-5Z-d74" firstAttribute="leading" secondItem="d0t-Wo-jpY" secondAttribute="leading" id="7iJ-D4-dhE"/>
+                            <constraint firstItem="BFt-Jh-G53" firstAttribute="top" secondItem="ZKy-5Z-d74" secondAttribute="bottom" constant="17" id="A43-QA-0bb"/>
+                            <constraint firstItem="wVM-uY-Fe3" firstAttribute="top" secondItem="GQE-Gq-sM5" secondAttribute="bottom" id="FFT-NO-bQ3"/>
+                            <constraint firstAttribute="trailing" secondItem="ZKy-5Z-d74" secondAttribute="trailing" id="Vgq-Vm-8Se"/>
+                            <constraint firstItem="wVM-uY-Fe3" firstAttribute="leading" secondItem="d0t-Wo-jpY" secondAttribute="leading" id="mWQ-uu-jOH"/>
+                            <constraint firstItem="BFt-Jh-G53" firstAttribute="top" secondItem="wVM-uY-Fe3" secondAttribute="bottom" constant="68" id="mkR-mp-Pxv"/>
+                            <constraint firstItem="ZKy-5Z-d74" firstAttribute="top" secondItem="wVM-uY-Fe3" secondAttribute="bottom" constant="1" id="slX-1D-cJa"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="#more" image="bar.other.disable" selectedImage="bar.other.enable" id="8eW-NV-vtY"/>
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
+                    <connections>
+                        <outlet property="tableView" destination="wVM-uY-Fe3" id="YN5-cl-pcq"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DnS-bu-U9V" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="596" y="357.57121439280365"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="bar.other.disable" width="20" height="4"/>
+        <image name="bar.other.enable" width="20" height="4"/>
+        <image name="ico.grey.customer" width="43" height="42"/>
+    </resources>
+</document>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="oVh-aw-ZP6">
+    <device id="retina5_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--#dashboard-->
+        <scene sceneID="fVt-4X-Eyj">
+            <objects>
+                <viewController id="oVh-aw-ZP6" customClass="Dashboard" customModule="Kanito" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="le9-Vx-0Px"/>
+                        <viewControllerLayoutGuide type="bottom" id="Tfw-HD-Ikp"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="gQ0-7H-yru">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="B5d-mR-fgK">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="20"/>
+                                <color key="backgroundColor" red="0.050980392159999999" green="0.51764705879999995" blue="0.53725490200000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="fD1-p5-Dqp"/>
+                                </constraints>
+                            </view>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" bouncesZoom="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CyC-i6-oR3">
+                                <rect key="frame" x="0.0" y="20" width="414" height="667"/>
+                                <color key="backgroundColor" red="0.96078431369999995" green="0.96078431369999995" blue="0.96078431369999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.96078431372549022" green="0.96078431372549022" blue="0.96078431372549022" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="CyC-i6-oR3" firstAttribute="top" secondItem="le9-Vx-0Px" secondAttribute="bottom" id="BQX-Rc-gmS"/>
+                            <constraint firstItem="CyC-i6-oR3" firstAttribute="leading" secondItem="gQ0-7H-yru" secondAttribute="leading" id="Hei-Aj-dO3"/>
+                            <constraint firstItem="Tfw-HD-Ikp" firstAttribute="top" secondItem="CyC-i6-oR3" secondAttribute="bottom" id="OOx-Q1-jbJ"/>
+                            <constraint firstItem="B5d-mR-fgK" firstAttribute="top" secondItem="gQ0-7H-yru" secondAttribute="top" id="fSF-Nq-515"/>
+                            <constraint firstAttribute="trailing" secondItem="CyC-i6-oR3" secondAttribute="trailing" id="mPO-RU-rJ2"/>
+                            <constraint firstItem="B5d-mR-fgK" firstAttribute="leading" secondItem="gQ0-7H-yru" secondAttribute="leading" id="o2i-fm-bjK"/>
+                            <constraint firstAttribute="trailing" secondItem="B5d-mR-fgK" secondAttribute="trailing" id="onM-rG-kgj"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="#dashboard" image="bar.dash.disable" selectedImage="bar.dash.enable" id="Ia6-Zu-qqO"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="scroll" destination="CyC-i6-oR3" id="br5-dF-FHp"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jxl-mY-0iQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1186" y="356"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="bar.dash.disable" width="20" height="20"/>
+        <image name="bar.dash.enable" width="20" height="20"/>
+    </resources>
+</document>

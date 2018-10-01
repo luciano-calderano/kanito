@@ -1,0 +1,210 @@
+
+chooseMarket=Choose marketplace|Scegli il tuo mercato
+marketInfo=This will help us customising your pet experience on Kanito. You can switch marketplace anytime.|Questo ci aiuterà a personalizzare la tua esperienza pet su Kanito. Potrai cambiare mercato in qualsiasi momento.
+letMeIn=I’m ready!|Sono pronto!
+tour01=Check upcoming bookings and statistics about your pet service|Vedi le prenotazioni in arrivo e le statistiche della tua attività pet
+tour02=Manage customers and pets records|Gestisci i dati dei clienti e degli animali
+tour03=Control your appointments calendar in few taps|Controlla il calendario appuntamenti con pochi tocchi
+
+-------------------- Login & Registrazione ----------------
+
+TM=Your Pet, One Solution™|Your Pet, One Solution™
+slogan=Compare and book pet care services|Compara e prenota servizi per animali
+login=Log in|Accedi
+signup=Sign up|Registrati
+anonLogin=Skip|Salta
+
+------ SignUp main
+
+signUpMessage=Welcome to Kanito|Welcome to Kanito
+signUpNoPost=We won’t post to Facebook without your permission|Non posteremo su Facebook senza il tuo permesso
+signUpFB=Sign in with Facebook|Accedi con Facebook
+signUpGoogle=Sign in with Google|Login con Google
+createAccount=Create an account|Crea un account
+or=or|oppure
+
+signUpPvtMsg=This first version of Kanito app is for pet professionals and businesses. Version for pet owners will come soon. If you are a pet owner you can register and use Kanito from our mobile friendly website.|Questa prima versione di Kanito è per professionisti e aziende. Se sei un proprietario di animali, puoi registrarti ed usare Kanito nella versione web.
+------ SignUp data
+
+firstName=First name|Nome
+lastName=Last name|Cognome
+firstNameDescr=Insert your first name|Inserisci il tuo nome
+lastNameDescr=Insert your last name|Inserisci il tuo cognome
+email=Email|Email
+signupUserMail=Enter your email|Inserisci la tua email
+password=Password|Password
+signupPassword=Enter your password|Inserisci la tua password
+passConf=Confirm password|Conferma password
+signupPassConf=Confirm your password|Conferma la tua password
+showPw=Show|Mostra
+termCond=Terms and conditions|Termini e condizioni
+privacy=Privacy policy |Privacy policy
+signUpMailFooter=Sign up with Facebook or Google|Registrati con Facebook o Google
+--- SignUp Type
+
+startProfile=Welcome to Kanito\nLet's start with your profile|Benvenuto su Kanito\nIniziamo col tuo profilo
+signupTypePvt=I’m a pet owner|Possiedo un animale
+signupTypePvtDesc=On Kanito you can compare and book any service for your pet|Su Kanito puoi comparare e prenotare qualsiasi servizio per il tuo pet
+signupTypePro=I’m a pet care professional|Sono un professionista pet care
+signupTypeProDesc=You provide training, pet sitting, veterinary, or grooming services|Fornisci servizi di educazione, pet sitting, veterinaria, o toelettatura
+signupTypeBiz=I run a pet care business|Ho un’attività per animali
+signupTypeBizDesc=You manage a training, daycare, boarding, vet or grooming facility|Gestisci una scuola per cani, asilo, pensione, ambulatorio veterinario, o toeletta
+startProfileBizInfo=Visible on Kanito marketplace|Visibile sul marketplace Kanito
+
+activType=Services provided|Servizi prestati
+activTypeInfo=Select up to three services|Seleziona fino a tre servizi
+
+telNumberTitle=Confirm your phone number|Conferma il tuo numero di telefono
+telNumber=Insert your phone number|Inserisci il tuo numero di telefono
+telNumberInfo=We will us it only to send notifications about your bookings. You can edit this any time.|Lo useremo solo per inviarti notifiche relative alle tue prenotazioni. Potrai modificarlo in qualsiasi momento.
+
+telCodeTitle=We just sent a code to the phone number given by you. Insert it here to proceed.|Abbiamo appena inviato un codice al numero di telefono da te fornito. Inseriscilo qui per continuare.
+telCodeNo=Code note received?|Non hai ricevuto il codice?
+--- SignUp Done
+
+signupDone=Everything’s ready!|È tutto pronto!
+signupDoneDesc=We will simplify your business management and help you find new customers.|Semplificheremo la gestione del tuo lavoro e ti aiuteremo a trovare nuovi clienti.
+signupGotoMyProfile=Go to My Profile|Vai al Mio Profilo
+signupGotoMyKanito=Go to My Dashboard|Vai al Mio Cruscotto
+
+------ SignUp biz
+
+selectCity=Select city|Seleziona città
+signupbizName=Business name|Nome attività
+signupbizNameDesc=Es. Mary Mobile Grooming|Es. Toelettatura 4 Zampe
+signupbizType=Services provided|Servizi prestati
+signupbizTypeDesc=Select services|Seleziona servizi
+max3=Max 3 activities|Massimo 3 attività
+signupbizAddr=Address|Indirizzo
+signupbizAddrDesc=Enter your address|Inserisci il tuo indirizzo
+signupbizCity=City|Città
+signupbizCityDesc=Enter your city|Inserisci la tua città
+startProfileBizInfo=Visible on Kanito marketplace|Visibile sul marketplace Kanito
+confirm=Confirm|Conferma
+cancel=Cancel|Annulla
+continue=Continue|Continua
+skip=Skip|Salta
+
+startProfileBiz=Let's start with your profile|Iniziamo col tuo profilo
+
+------ Login main
+
+loginMessage=Welcome to Kanito|Benvenuto su Kanito
+loginNoPost=We won’t post to Facebook or Google without your permission|Non posteremo su Facebook o Google senza il tuo permesso
+loginFB=Login with Facebook|Accedi con Facebook
+loginGoogle=Login with Google|Accedi con Google
+loginEmail=Login with email|Accedi con email
+login=Login|Accedi
+passForgot=Forgot password?|Password dimenticata?
+
+--- BIZ home
+
+welcome=Welcome|Benvenuto
+yourBooking=Upcoming bookings and requests|Prenotazioni in arrivo e richieste
+noBooking=No upcoming bookings|Nessuna prenotazione in arrivo
+yourStat=Monthly statistics|Statistiche mensili
+statNumPre=Bookings|Prenotazioni
+statIncome=Revenues|Ricavi
+addPet=Add pet|Aggiungi pet
+addBooking=New booking|Nuovo appuntamento
+checkCalendar=Check calendar|Controlla calendario
+today=Today|Oggi
+
+confirmed=Confirmed|Confermato
+inPending=In pending|Da confermare
+reject=Reject|Rifiuta
+accept=Accept|Accetta
+rejectBooking=Reject booking|Annulla prenotazione
+bookingDetail=Booking detail|Dettaglio prenotazione
+
+dashboard=Dashboard|Cruscotto
+customers=Customers|Clienti
+pets=Pets|Animali
+calendar=Calendar|Calendario
+more=More|Altro
+viewMore=View more|Vedi tutti
+
+--- BIZ customer
+
+bizCustList=Customer list|Elenco clienti
+update=Update|Aggiorna
+custInfo=Info|Info
+custPets=Pets|Animali
+seeDetail=See details|Vedi dettagli
+noCust=You have no customers yet. Add a new customer now by tapping on the "+" icon|Non hai clienti. Aggiungi un nuovo cliente toccando "+"
+
+edit=Edit|Modifica
+save=Save|Salva
+addPet=Add pet|Nuovo animale
+deleteCust=Delete customer?|Elimina cliente?
+deleteCustInho=This will delete this customer and all his/her pets. Are you sure?|Questo cancellerà il cliente e tutti i suoi animali. Sei sicuro?
+code=Code|Codice
+phone=Phone|Telefono
+vetName=Vet name|Nome veterinario
+vetPhone=Vet phone|Telefono veterinario
+
+addCustomer=Add customer|Aggiungi cliente
+editCustomer=Edit customer|Modifica cliente
+addCustInfo=Before adding a new customer, search for him/her on Kanito marketplace.|Prima di aggiungere un nuovo cliente, cercalo sul marketplace Kanito
+addCustTitle=Search by email|Cerca per email
+addCustPlaceholder=Insert customer email|Inserisci email del cliente
+addCustNoMail=I don't have his/her email address|Non ho il suo indirizzo email
+find=Find|Cerca
+addPlus=Add +|Aggiungi +
+addCustNotFound=Bad luck?|Sfortunato?
+addManu=Add customer manually|Aggiungi cliente manualmente
+addCustDone=Customer added!|Cliente aggiunto!
+addCustDoneDesc=Well done, all client data and pets have been copied to your account|Perfetto, tutti i dati del ciente sono stati copiati nella tua utenza
+
+--- BIZ pets
+
+dog=Dog|Cane
+cat=Cat|Gatto
+bizPetsList=Pets list|Elenco animali
+owner=Owner|Proprietario
+petType=Pet type|Tipo di animale
+petName=Pet name|Nome del pet
+petBreed=Breed|Razza
+petAge=Age|Età
+petSize=Size|Taglia
+petGender=Gender|Sesso
+petDelete=Delete pet|Elimina animale
+male=Male|Maschio
+female=Female|Femmina
+addPetsDone=Pet added|Pet aggiunto
+
+--- Biz reservation
+
+bizCalendar=My calendar|Mio calendario
+booking=Booking|Prenotazione
+deleteBooking=Delete booking?|Cancello prenotazione?
+title=Title|Titolo
+date=Date|Data
+pet=Pet|Animale
+activity=Service|Servizio
+service=Treatment|Prestazione
+startTime=Start time|Ora inizio
+endTime=End time|Ora fine
+employee=Collaborator|Collaboratore
+total=Total|Totale
+isPending=Is pending|In attesa
+note=Note|Note
+
+booking.date=Select date|Seleziona Data
+booking.pet=Select Pet|Seleziona Pet
+booking.activity=Select service|Seleziona servizio
+booking.service=Select a treatment for this booking|Seleziona una prestazione per questa prenotazione
+booking.startTime=Select Start time|Seleziona ora inizio
+booking.endTime=Select End time|Seleziona ora fine
+booking.employee=Select Collaborator|Seleziona Collaboratore
+booking.total=Total|Totale
+
+noCustSel=No customer found|Nessun cliente trovato
+--- BIZ more
+
+settings=Settings|Impostazioni
+support=Support|Supporto
+gotoMarketPlace=Go to Kanito marketplace|Vai al marketplace Kanito
+logout=Logout|Esci
+areSure=Are you sure?|Sei sicuro?
+
